@@ -1,3 +1,106 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+    
+    @font-face {
+        font-family: 'bebas-neue';
+        src: url("fonts/bebasneue-regular-webfont.woff2") format('woff2'),
+            url('fonts/bebasneue-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'source-sans-pro';
+        src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+            url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'source-sans-pro';
+        src: url('fonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+            url('fonts/sourcesanspro-semibold-webfont.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'futura';
+        src: url('fonts/futura_bold_font-webfont.woff2') format('woff2'),
+            url('fonts/futura_bold_font-webfont.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'futura-condensed';
+        src: url('fonts/futura_medium_condensed_bt-webfont.woff2') format('woff2'),
+            url('fonts/futura_medium_condensed_bt-webfont.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'futura';
+        src: url('fonts/futura_medium_bt-webfont.woff2') format('woff2'),
+            url('fonts/futura_medium_bt-webfont.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+@layer base {
+    html {
+        @apply 5xl:text-[18px];
+    }
+
+    h1 {
+        @apply uppercase font-futuraCondensed font-medium text-[2rem] leading-[100%] xs:text-4xl;
+    }
+
+    h3 {
+        @apply uppercase font-futuraCondensed font-medium text-4xl leading-[100%];
+    }
+
+    p {
+        @apply font-sourceSansPro font-normal text-base leading-[160%] xl:text-[.925rem] 4xl:text-base;
+    }
+}
+
+@layer utilities {
+    .px-screen {
+        @apply px-[10%] md:px-12 lg:px-[4.5rem] xl:px-20 4xl:px-0;
+    }
+}
+
+@layer components {
+    a.button {
+        @apply inline-flex items-center justify-center min-h-[44px] min-w-[36ch] w-full py-4 px-3 text-white uppercase font-futura font-bold leading-[100%] tracking-[.075em] text-center md:w-auto;
+    }
+
+    .nav-link::before {
+        transition: 300ms;
+        height: 5px;
+        content: "";
+        position: absolute;
+        background-color: #6AA2B9;
+    }
+
+    .nav-link-grow-up::before {
+        height: 0%;
+        width: 100%;
+        bottom: 0px;
+    }
+      
+      .nav-link-grow-up:hover::before {
+        height: 5px;
+    }
+
+    .bg-testimonials {
+        background-image: url(images/home_testimonials-bg2_1920w_1x.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
