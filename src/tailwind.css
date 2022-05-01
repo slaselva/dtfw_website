@@ -103,4 +103,11 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
     }
+
+    .bg-hero-who-we-are {
+        background-image: url(images/who-we-are_hero_480w_1x.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 }

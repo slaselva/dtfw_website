@@ -519,6 +519,12 @@ a.button {
 .nav-link-grow-up:hover::before {
         height: 5px;
     }
+.bg-hero-who-we-are {
+        background-image: url(images/who-we-are_hero_480w_1x.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 .absolute {
   position: absolute;
 }
@@ -573,8 +579,20 @@ a.button {
 .row-start-2 {
   grid-row-start: 2;
 }
+.row-start-4 {
+  grid-row-start: 4;
+}
 .row-end-3 {
   grid-row-end: 3;
+}
+.row-end-2 {
+  grid-row-end: 2;
+}
+.row-end-4 {
+  grid-row-end: 4;
+}
+.row-end-5 {
+  grid-row-end: 5;
 }
 .mx-auto {
   margin-left: auto;
@@ -595,6 +613,9 @@ a.button {
 .mt-\[-7rem\] {
   margin-top: -7rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .flex {
   display: flex;
 }
@@ -610,8 +631,14 @@ a.button {
 .h-\[25rem\] {
   height: 25rem;
 }
+.h-\[85vh\] {
+  height: 85vh;
+}
 .max-h-screen {
   max-height: 100vh;
+}
+.max-h-\[110vh\] {
+  max-height: 110vh;
 }
 .w-full {
   width: 100%;
@@ -642,6 +669,9 @@ a.button {
 }
 .w-\[102\%\] {
   width: 102%;
+}
+.w-\[85vh\] {
+  width: 85vh;
 }
 .min-w-\[16rem\] {
   min-width: 16rem;
@@ -709,6 +739,15 @@ a.button {
 }
 .grid-rows-\[auto_18rem\] {
   grid-template-rows: auto 18rem;
+}
+.grid-rows-\[auto_4rem_auto_auto\] {
+  grid-template-rows: auto 4rem auto auto;
+}
+.grid-rows-\[6rem_auto_6rem\] {
+  grid-template-rows: 6rem auto 6rem;
+}
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -1010,12 +1049,12 @@ a.button {
         font-style: normal;
     }
 
-    .hover\:text-blue:hover {
+.hover\:text-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(106 162 185 / var(--tw-text-opacity));
 }
 
-    @media (min-width: 375px) {
+@media (min-width: 375px) {
 
   .xs\:mb-4 {
     margin-bottom: 1rem;
@@ -1026,7 +1065,7 @@ a.button {
   }
 }
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
 
   .md\:left-\[-12\%\] {
     left: -12%;
@@ -1126,7 +1165,7 @@ a.button {
   }
 }
 
-    @media (min-width: 1024px) {
+@media (min-width: 1024px) {
 
   .lg\:top-\[20\%\] {
     top: 20%;
@@ -1183,7 +1222,7 @@ a.button {
   }
 }
 
-    @media (min-width: 1280px) {
+@media (min-width: 1280px) {
 
     .xl\:bg-testimonials {
         background-image: url(images/home_testimonials-bg2_1920w_1x.webp);
@@ -1535,7 +1574,7 @@ a.button {
   }
 }
 
-    @media (min-width: 1920px) {
+@media (min-width: 1920px) {
 
   .\34xl\:left-\[-6\%\] {
     left: -6%;
