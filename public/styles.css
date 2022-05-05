@@ -431,6 +431,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   p {
     font-size: 1rem;
     line-height: 1.5rem;
+    line-height: 160%;
+  }
+}
+
+    @media (min-width: 2000px) {
+
+  p {
+    font-size: 1.125rem;
   }
 }
 
@@ -525,6 +533,13 @@ a.button {
         background-attachment: fixed;
         background-repeat: no-repeat;
     }
+.bg-good-people {
+        background-image: url(images/who-we-are_good-people_1920w_1x.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+    }
 .absolute {
   position: absolute;
 }
@@ -573,6 +588,9 @@ a.button {
 .col-start-1 {
   grid-column-start: 1;
 }
+.col-end-1 {
+  grid-column-end: 1;
+}
 .row-start-1 {
   grid-row-start: 1;
 }
@@ -585,14 +603,14 @@ a.button {
 .row-end-3 {
   grid-row-end: 3;
 }
+.row-end-5 {
+  grid-row-end: 5;
+}
 .row-end-2 {
   grid-row-end: 2;
 }
 .row-end-4 {
   grid-row-end: 4;
-}
-.row-end-5 {
-  grid-row-end: 5;
 }
 .mx-auto {
   margin-left: auto;
@@ -616,6 +634,12 @@ a.button {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
 .flex {
   display: flex;
 }
@@ -636,9 +660,6 @@ a.button {
 }
 .max-h-screen {
   max-height: 100vh;
-}
-.max-h-\[110vh\] {
-  max-height: 110vh;
 }
 .w-full {
   width: 100%;
@@ -670,9 +691,6 @@ a.button {
 .w-\[102\%\] {
   width: 102%;
 }
-.w-\[85vh\] {
-  width: 85vh;
-}
 .min-w-\[16rem\] {
   min-width: 16rem;
 }
@@ -700,6 +718,12 @@ a.button {
 .max-w-\[16\.875rem\] {
   max-width: 16.875rem;
 }
+.max-w-\[50ch\] {
+  max-width: 50ch;
+}
+.max-w-\[80rem\] {
+  max-width: 80rem;
+}
 .flex-\[1_1_65ch\] {
   flex: 1 1 65ch;
 }
@@ -712,11 +736,20 @@ a.button {
 .flex-\[1_1_8\.5rem\] {
   flex: 1 1 8.5rem;
 }
+.flex-\[1_1_34ch\] {
+  flex: 1 1 34ch;
+}
+.flex-\[1_1_38ch\] {
+  flex: 1 1 38ch;
+}
 .flex-shrink-0 {
   flex-shrink: 0;
 }
 .shrink {
   flex-shrink: 1;
+}
+.shrink-0 {
+  flex-shrink: 0;
 }
 .grow {
   flex-grow: 1;
@@ -734,6 +767,9 @@ a.button {
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.grid-cols-\[repeat\(auto-fit\2c minmax\(8\.375rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(8.375rem,1fr));
+}
 .grid-rows-\[8rem_auto\] {
   grid-template-rows: 8rem auto;
 }
@@ -745,9 +781,6 @@ a.button {
 }
 .grid-rows-\[6rem_auto_6rem\] {
   grid-template-rows: 6rem auto 6rem;
-}
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -772,6 +805,12 @@ a.button {
 }
 .gap-4 {
   gap: 1rem;
+}
+.gap-12 {
+  gap: 3rem;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .gap-y-5 {
   row-gap: 1.25rem;
@@ -799,6 +838,13 @@ a.button {
 .gap-y-6 {
   row-gap: 1.5rem;
 }
+.gap-y-12 {
+  row-gap: 3rem;
+}
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
 .self-center {
   align-self: center;
 }
@@ -813,6 +859,16 @@ a.button {
 }
 .rounded-full {
   border-radius: 9999px;
+}
+.border-t-\[3px\] {
+  border-top-width: 3px;
+}
+.border-solid {
+  border-style: solid;
+}
+.border-dark-grey {
+  --tw-border-opacity: 1;
+  border-color: rgb(33 33 33 / var(--tw-border-opacity));
 }
 .bg-dark-blue {
   --tw-bg-opacity: 1;
@@ -846,6 +902,10 @@ a.button {
   padding-top: 16.666667%;
   padding-bottom: 16.666667%;
 }
+.py-\[10\%\] {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 .pl-8 {
   padding-left: 2rem;
 }
@@ -873,6 +933,18 @@ a.button {
 .pt-\[26\%\] {
   padding-top: 26%;
 }
+.pt-\[10\%\] {
+  padding-top: 10%;
+}
+.pl-\[10\%\] {
+  padding-left: 10%;
+}
+.pt-4 {
+  padding-top: 1rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
+}
 .text-center {
   text-align: center;
 }
@@ -881,6 +953,9 @@ a.button {
 }
 .font-sourceSansPro {
   font-family: source-sans-pro, sans-serif;
+}
+.font-futuraCondensed {
+  font-family: futura-condensed, sans-serif;
 }
 .text-sm {
   font-size: 0.875rem;
@@ -901,6 +976,10 @@ a.button {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .font-medium {
   font-weight: 500;
@@ -945,6 +1024,14 @@ a.button {
 .text-grey {
   --tw-text-opacity: 1;
   color: rgb(114 114 114 / var(--tw-text-opacity));
+}
+.text-dark-grey {
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+.text-dark-blue {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 68 / var(--tw-text-opacity));
 }
 .opacity-50 {
   opacity: 0.5;
@@ -1000,6 +1087,11 @@ a.button {
     padding-right: 0px;
   }
 }
+.w-content {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
     
     @font-face {
         font-family: 'bebas-neue';
@@ -1049,6 +1141,58 @@ a.button {
         font-style: normal;
     }
 
+.timeline-container {
+    display: grid;
+    gap: 3rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 22.5rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -ms-scroll-snap-type: inline mandatory;
+        scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 10%;
+}
+
+.timeline-container > * {
+    scroll-snap-align: start;
+}
+
+@media only screen and (min-width: 768px) { 
+
+    .timeline-container {
+        scroll-padding-inline: 3rem;
+        grid-auto-columns: 28.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) { 
+
+    .timeline-container {
+        scroll-padding-inline: 4.5rem;
+        grid-auto-columns: 32.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) { 
+
+    .timeline-container {
+        scroll-padding-inline: 5rem;
+        grid-auto-columns: 30.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1920px) { 
+
+    .timeline-container {
+        scroll-padding-inline: 0;
+        grid-auto-columns: 32.5rem;
+    }
+
+}
+
 .hover\:text-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(106 162 185 / var(--tw-text-opacity));
@@ -1060,12 +1204,20 @@ a.button {
     margin-bottom: 1rem;
   }
 
+  .xs\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .xs\:w-\[17rem\] {
     width: 17rem;
   }
 }
 
 @media (min-width: 768px) {
+
+  .md\:absolute {
+    position: absolute;
+  }
 
   .md\:left-\[-12\%\] {
     left: -12%;
@@ -1135,6 +1287,10 @@ a.button {
     grid-template-rows: auto 1fr;
   }
 
+  .md\:grid-rows-\[6rem_auto\] {
+    grid-template-rows: 6rem auto;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
@@ -1163,6 +1319,10 @@ a.button {
   .md\:pt-8 {
     padding-top: 2rem;
   }
+
+  .md\:pl-12 {
+    padding-left: 3rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1173,6 +1333,42 @@ a.button {
 
   .lg\:left-\[-11\%\] {
     left: -11%;
+  }
+
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .lg\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .lg\:col-end-3 {
+    grid-column-end: 3;
+  }
+
+  .lg\:col-end-2 {
+    grid-column-end: 2;
+  }
+
+  .lg\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .lg\:row-start-3 {
+    grid-row-start: 3;
+  }
+
+  .lg\:row-start-4 {
+    grid-row-start: 4;
+  }
+
+  .lg\:row-end-4 {
+    grid-row-end: 4;
+  }
+
+  .lg\:row-end-5 {
+    grid-row-end: 5;
   }
 
   .lg\:mb-2 {
@@ -1187,6 +1383,14 @@ a.button {
     max-width: 28rem;
   }
 
+  .lg\:max-w-\[65ch\] {
+    max-width: 65ch;
+  }
+
+  .lg\:grid-cols-\[auto_auto\] {
+    grid-template-columns: auto auto;
+  }
+
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -1199,6 +1403,28 @@ a.button {
   .lg\:gap-x-8 {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
+  }
+
+  .lg\:self-center {
+    align-self: center;
+  }
+
+  .lg\:self-baseline {
+    align-self: baseline;
+  }
+
+  .lg\:justify-self-start {
+    justify-self: start;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:py-\[12\%\] {
+    padding-top: 12%;
+    padding-bottom: 12%;
   }
 
   .lg\:pl-\[25\%\] {
@@ -1219,6 +1445,14 @@ a.button {
 
   .lg\:pt-48 {
     padding-top: 12rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .lg\:pl-\[4\.5rem\] {
+    padding-left: 4.5rem;
   }
 }
 
@@ -1308,6 +1542,10 @@ a.button {
     margin-top: -5rem;
   }
 
+    .xl\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
     .xl\:block {
     display: block;
   }
@@ -1334,6 +1572,10 @@ a.button {
     max-height: 35rem;
   }
 
+    .xl\:max-h-\[53rem\] {
+    max-height: 53rem;
+  }
+
     .xl\:w-full {
     width: 100%;
   }
@@ -1348,6 +1590,10 @@ a.button {
 
     .xl\:w-\[55\%\] {
     width: 55%;
+  }
+
+    .xl\:w-\[20rem\] {
+    width: 20rem;
   }
 
     .xl\:max-w-\[50rem\] {
@@ -1468,6 +1714,10 @@ a.button {
     grid-template-rows: 8rem calc(100vh - 7rem);
   }
 
+    .xl\:grid-rows-\[auto_12rem_auto_auto\] {
+    grid-template-rows: auto 12rem auto auto;
+  }
+
     .xl\:items-baseline {
     align-items: baseline;
   }
@@ -1487,6 +1737,15 @@ a.button {
     .xl\:gap-x-16 {
     -moz-column-gap: 4rem;
          column-gap: 4rem;
+  }
+
+    .xl\:gap-x-20 {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+
+    .xl\:overflow-hidden {
+    overflow: hidden;
   }
 
     .xl\:overflow-clip {
@@ -1519,6 +1778,11 @@ a.button {
     .xl\:py-\[5\%\] {
     padding-top: 5%;
     padding-bottom: 5%;
+  }
+
+    .xl\:py-\[16\%\] {
+    padding-top: 16%;
+    padding-bottom: 16%;
   }
 
     .xl\:pt-8 {
@@ -1555,6 +1819,18 @@ a.button {
 
     .xl\:pb-\[14\%\] {
     padding-bottom: 14%;
+  }
+
+    .xl\:pt-16 {
+    padding-top: 4rem;
+  }
+
+    .xl\:pb-\[10\%\] {
+    padding-bottom: 10%;
+  }
+
+    .xl\:pt-\[5\%\] {
+    padding-top: 5%;
   }
 
     .xl\:leading-\[145\%\] {
@@ -1621,6 +1897,10 @@ a.button {
     width: 22rem;
   }
 
+  .\34xl\:w-\[23rem\] {
+    width: 23rem;
+  }
+
   .\34xl\:max-w-\[60rem\] {
     max-width: 60rem;
   }
@@ -1641,6 +1921,10 @@ a.button {
     flex-basis: 20rem;
   }
 
+  .\34xl\:grid-rows-\[auto_21rem_auto_auto\] {
+    grid-template-rows: auto 21rem auto auto;
+  }
+
   .\34xl\:justify-end {
     justify-content: flex-end;
   }
@@ -1653,6 +1937,10 @@ a.button {
     justify-content: space-between;
   }
 
+  .\34xl\:gap-24 {
+    gap: 6rem;
+  }
+
   .\34xl\:gap-x-\[5\%\] {
     -moz-column-gap: 5%;
          column-gap: 5%;
@@ -1663,9 +1951,19 @@ a.button {
          column-gap: 0px;
   }
 
+  .\34xl\:gap-x-24 {
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
+
   .\34xl\:py-\[10\%\] {
     padding-top: 10%;
     padding-bottom: 10%;
+  }
+
+  .\34xl\:py-\[12\%\] {
+    padding-top: 12%;
+    padding-bottom: 12%;
   }
 
   .\34xl\:pl-\[calc\(\(100vw-100rem\)\/2\)\] {
@@ -1684,7 +1982,19 @@ a.button {
     padding-bottom: 10%;
   }
 
+  .\34xl\:pt-\[10\%\] {
+    padding-top: 10%;
+  }
+
+  .\34xl\:pl-0 {
+    padding-left: 0px;
+  }
+
   .\34xl\:text-\[3\.5rem\] {
     font-size: 3.5rem;
+  }
+
+  .\34xl\:text-\[4rem\] {
+    font-size: 4rem;
   }
 }
