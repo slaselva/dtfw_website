@@ -573,6 +573,12 @@ a.button {
 .right-\[-1\%\] {
   right: -1%;
 }
+.top-\[75\%\] {
+  top: 75%;
+}
+.right-0 {
+  right: 0px;
+}
 .z-20 {
   z-index: 20;
 }
@@ -690,6 +696,9 @@ a.button {
 }
 .w-\[102\%\] {
   width: 102%;
+}
+.w-80 {
+  width: 20rem;
 }
 .min-w-\[16rem\] {
   min-width: 16rem;
@@ -1036,6 +1045,9 @@ a.button {
 .opacity-50 {
   opacity: 0.5;
 }
+.opacity-40 {
+  opacity: 0.4;
+}
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
@@ -1151,7 +1163,13 @@ a.button {
     -ms-scroll-snap-type: inline mandatory;
         scroll-snap-type: inline mandatory;
     scroll-padding-inline: 10%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+.timeline-container::-webkit-scrollbar {
+    display: none;
+  }
 
 .timeline-container > * {
     scroll-snap-align: start;
@@ -1162,6 +1180,10 @@ a.button {
     .timeline-container {
         scroll-padding-inline: 3rem;
         grid-auto-columns: 28.5rem;
+    }
+
+    .bg-hero-who-we-are {
+        background-image: url(images/who-we-are_hero_1024w_1x.webp);
     }
 
 }
@@ -1182,6 +1204,10 @@ a.button {
         grid-auto-columns: 30.5rem;
     }
 
+    .bg-hero-who-we-are {
+        background-image: url(images/who-we-are_hero_1366w_1x.webp);
+    }
+
 }
 
 @media only screen and (min-width: 1920px) { 
@@ -1189,6 +1215,18 @@ a.button {
     .timeline-container {
         scroll-padding-inline: 0;
         grid-auto-columns: 32.5rem;
+    }
+
+    .bg-hero-who-we-are {
+        background-image: url(images/who-we-are_hero_1920w_1x.webp);
+    }
+
+}
+
+@media only screen and (min-width: 2000px) { 
+
+    .bg-hero-who-we-are {
+        background-image: url(images/who-we-are_hero_2560w_1x.webp);
     }
 
 }
@@ -1845,6 +1883,10 @@ a.button {
     opacity: 1;
   }
 
+    .xl\:opacity-50 {
+    opacity: 0.5;
+  }
+
     .xl\:mix-blend-multiply {
     mix-blend-mode: multiply;
   }
@@ -1862,6 +1904,10 @@ a.button {
 
   .\34xl\:top-\[37\%\] {
     top: 37%;
+  }
+
+  .\34xl\:top-\[65\%\] {
+    top: 65%;
   }
 
   .\34xl\:mx-auto {
@@ -1899,6 +1945,10 @@ a.button {
 
   .\34xl\:w-\[23rem\] {
     width: 23rem;
+  }
+
+  .\34xl\:w-\[40rem\] {
+    width: 40rem;
   }
 
   .\34xl\:max-w-\[60rem\] {

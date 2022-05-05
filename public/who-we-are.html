@@ -19,7 +19,44 @@
             <section class="relative w-full h-full overflow-hidden grid grid-rows-[auto_4rem_auto_auto] grid-cols-1 lg:grid-cols-[auto_auto] xl:grid-rows-[auto_12rem_auto_auto] 4xl:grid-rows-[auto_21rem_auto_auto]">
                 <!--OVERLAY TEXTURE-->
                 <div class="relative z-20 w-full h-full mix-blend-multiply overflow-hidden row-start-1 row-end-5 col-start-1 col-end-1 md:absolute lg:col-start-1 lg:col-end-3">
-                    <img class="w-full h-full" src="images/overlay_480W.webp" alt="">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="
+                        images/images/overlay_480w.webp 1x,
+                        images/images/overlay_480w.webp 2x,
+                        images/images/overlay_480w.webp 3x">
+
+                        <source media="(min-width: 481px) and (max-width: 768px)" srcset="
+                        images/overlay_1024w.webp 1x,
+                        images/overlay_1024w.webp 2x,
+                        images/overlay_1024w.webp 3x">
+
+                        <source media="(min-width: 769px) and (max-width: 1024px)" srcset="
+                        images/overlay_1024w.webp 1x,
+                        images/overlay_1024w.webp 2x,
+                        images/overlay_1024w.webp 3x">
+
+                        <source media="(min-width: 1025px) and (max-width: 1280px)" srcset="
+                        images/overlay_1366w.webp 1x,
+                        images/overlay_1366w.webp 2x,
+                        images/overlay_1366w.webp 3x">
+
+                        <source media="(min-width: 1281px) and (max-width: 1440px)" srcset="
+                        images/overlay_1366w.webp 1x,
+                        images/overlay_1366w.webp 2x,
+                        images/overlay_1366w.webp 3x">
+
+                        <source media="(min-width: 1441px) and (max-width: 1920px)" srcset="
+                        images/overlay_1920w.webp 1x,
+                        images/overlay_1920w.webp 2x,
+                        images/overlay_1920w.webp 3x">
+
+                        <source media="(min-width: 1921px)" srcset="
+                        images/overlay_1920w.webp 1x,
+                        images/overlay_1920w.webp 2x,
+                        images/overlay_1920w.webp 3x">
+
+                        <img class="w-full h-full xl:opacity-50" src="images/overlay_1920w.webp" alt="Katapult team behind the scenes happily working with each other">
+                    </picture>
                 </div>
                 <!--HERO-->
                 <section class="relative w-full h-[85vh] bg-hero-who-we-are row-start-1 row-end-3 col-start-1 grid grid-rows-[6rem_auto_6rem] grid-cols-1 md:grid-rows-[6rem_auto] lg:col-end-3">
@@ -44,7 +81,7 @@
                             <!--LINKS-->
                             <ul class="flex h-full w-full pl-8 grow items-center justify-between">
                                 <li class="relative h-full pt-7 nav-link nav-link-grow-up">
-                                    <a class="relative text-white text-sm font-futura font-medium capitalize -tracking-tight hover:text-blue transition-colors ease-out duration-[250ms]" href="#">who we are</a>
+                                    <a class="relative text-white text-sm font-futura font-medium capitalize -tracking-tight hover:text-blue transition-colors ease-out duration-[250ms]" href="who-we-are.html">who we are</a>
                                 </li>
                                 <li class="relative h-full pt-7 nav-link nav-link-grow-up">
                                     <a class="relative text-white text-sm font-futura font-medium capitalize -tracking-tight hover:text-blue transition-colors ease-out duration-[250ms]" href="#">the studio</a>
@@ -75,6 +112,44 @@
                 </section>
                 <!--IMAGE-->
                 <aside class="relative z-40 px-screen mb-12 row-start-2 row-end-4 col-start-1 self-center justify-self-center lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-4 lg:px-0 lg:self-baseline lg:justify-self-start xl:w-full xl:max-h-[53rem] xl:overflow-hidden">
+                    <!-- <picture>
+                        <source media="(max-width: 480px)" srcset="
+                        images/who-we-are_staff_480w_1x.webp 1x,
+                        images/who-we-are_staff_480w_1x.webp 2x,
+                        images/who-we-are_staff_480w_1x.webp 3x">
+
+                        <source media="(min-width: 481px) and (max-width: 768px)" srcset="
+                        images/who-we-are_staff_480w_1x.webp 1x,
+                        images/who-we-are_staff_480w_1x.webp 2x,
+                        images/who-we-are_staff_480w_1x.webp 3x">
+
+                        <source media="(min-width: 769px) and (max-width: 1024px)" srcset="
+                        images/who-we-are_staff_480w_1x.webp 1x,
+                        images/who-we-are_staff_480w_1x.webp 2x,
+                        images/who-we-are_staff_480w_1x.webp 3x">
+
+                        <source media="(min-width: 1025px) and (max-width: 1280px)" srcset="
+                        images/who-we-are_staff_480w_1x.webp 1x,
+                        images/who-we-are_staff_480w_1x.webp 2x,
+                        images/who-we-are_staff_480w_1x.webp 3x">
+
+                        <source media="(min-width: 1281px) and (max-width: 1440px)" srcset="
+                        images/who-we-are_staff_480w_1x.webp 1x,
+                        images/who-we-are_staff_480w_1x.webp 2x,
+                        images/who-we-are_staff_480w_1x.webp 3x">
+
+                        <source media="(min-width: 1441px) and (max-width: 1920px)" srcset="
+                        images/who-we-are_staff_2560w_1x.webp 1x,
+                        images/who-we-are_staff_2560w_1x.webp 2x,
+                        images/who-we-are_staff_2560w_1x.webp 3x">
+
+                        <source media="(min-width: 1921px)" srcset="
+                        images/who-we-are_staff_2560w_1x.webp 1x,
+                        images/who-we-are_staff_2560w_1x.webp 2x,
+                        images/who-we-are_staff_2560w_1x.webp 3x">
+
+                        <img class="w-full" src="images/who-we-are_staff_480w_1x.webp" alt="Katapult team behind the scenes happily working with each other">
+                    </picture> -->
                     <img class="w-full" src="images/who-we-are_staff_480w_1x.webp" alt="">
                 </aside>
                 <!--COMPANY HISTORY-->
@@ -127,13 +202,40 @@
                                 <p>Lorem Ipsum is simply dummyprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text of the prin.  Lorem Ipsum is simply dung and typesetting industry.</p>
                             </div>
                         </div>
+                        <!--THE SHOP OPENS-->
+                        <div class="pt-4 pr-2 flex gap-4 border-t-[3px] border-solid border-dark-grey">
+                            <h5 class="font-futuraCondensed text-2xl uppercase shrink-0">nov 18</h5>
+                            <!--HEADING AND DESCRIPTION-->
+                            <div>
+                                <h3 class="font-futura font-bold mb-3">the shop opens</h3>
+                                <p>Lorem Ipsum is simply dummyprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text of the prin.  Lorem Ipsum is simply dung and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <!--THE SHOP OPENS-->
+                        <div class="pt-4 pr-2 flex gap-4 border-t-[3px] border-solid border-dark-grey">
+                            <h5 class="font-futuraCondensed text-2xl uppercase shrink-0">nov 18</h5>
+                            <!--HEADING AND DESCRIPTION-->
+                            <div>
+                                <h3 class="font-futura font-bold mb-3">the shop opens</h3>
+                                <p>Lorem Ipsum is simply dummyprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text of the prin.  Lorem Ipsum is simply dung and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <!--THE SHOP OPENS-->
+                        <div class="pt-4 pr-2 flex gap-4 border-t-[3px] border-solid border-dark-grey">
+                            <h5 class="font-futuraCondensed text-2xl uppercase shrink-0">nov 18</h5>
+                            <!--HEADING AND DESCRIPTION-->
+                            <div>
+                                <h3 class="font-futura font-bold mb-3">the shop opens</h3>
+                                <p>Lorem Ipsum is simply dummyprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text of the prin.  Lorem Ipsum is simply dung and typesetting industry.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </section>
             <!--GOOD PEOPLE AND TEAM IMAGES-->
-            <section class="bg-blue bg-good-people py-[10%] lg:py-[12%] xl:py-[16%] 4xl:py-[12%]">
+            <section class="relative bg-blue bg-good-people py-[10%] lg:py-[12%] xl:py-[16%] 4xl:py-[12%]">
                 <!--GOOD PEOPLE CONTAINER-->
-                <div class="px-screen max-w-layout mx-auto flex flex-wrap gap-12 4xl:gap-24">
+                <div class="relative z-30 px-screen max-w-layout mx-auto flex flex-wrap gap-12 4xl:gap-24">
                     <!--GOOD PEOPLE DOING GOOD WORK-->
                     <div class="flex-[1_1_34ch] max-w-[50ch]">
                         <!--HEADING-->
@@ -175,7 +277,7 @@
                     </div>
                 </div>
                 <!--MEET THE TEAM-->
-                <div class="px-screen max-w-layout mx-auto pt-[10%] xl:pt-[5%]">
+                <div class="relative z-30 px-screen max-w-layout mx-auto pt-[10%] xl:pt-[5%]">
                     <h1 class="text-dark-grey text-5xl">meet the hands and minds that bring your vision to life</h1>
                     <!--TEAM MEMBERS GRID-->
                     <div class="pt-16 grid grid-cols-[repeat(auto-fit,minmax(8.375rem,1fr))] max-w-[80rem] gap-y-12 gap-x-12 xl:gap-x-20 4xl:gap-x-24">
@@ -276,6 +378,14 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <!--LOGO-->
+                <div class="hidden xl:block absolute z-20 w-80 opacity-40 top-[75%] right-0 4xl:top-[65%] 4xl:w-[40rem]">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 465">
+                        <path d="M47.69 189.862 0 172.13l6-16.194c1.78-4.788 5.41-12.555 13.63-16.493 7.44-3.579 14.7-2.099 19.85-.18 6.29 2.339 11.29 5.998 14.2 12.365a27.5773 27.5773 0 0 1 .41 20.991l-6.4 17.243Zm-5.9-16.273.93-2.499c1.12-2.999 2.4-7.327.45-11.715-.92-2.129-3.15-5.318-8.44-7.287-4.43-1.649-8.73-1.699-11.82-.17-3.81 1.919-5.54 5.678-6.68 8.746l-1.12 2.999 26.68 9.926ZM92.08 99.3494c.57 7.1466-2 14.4636-6.82 20.3216-4.5731 5.826-11.2032 9.681-18.53 10.776a26.6169 26.6169 0 0 1-10.4867-.897 26.5991 26.5991 0 0 1-9.3179-4.892 26.5894 26.5894 0 0 1-6.6902-8.122 26.5736 26.5736 0 0 1-3.0152-10.08A28.9797 28.9797 0 0 1 44 86.0948a29.0025 29.0025 0 0 1 18.56-10.7856 26.6412 26.6412 0 0 1 10.4857.9023 26.6335 26.6335 0 0 1 9.3171 4.8926 26.6219 26.6219 0 0 1 6.6933 8.1187A26.6132 26.6132 0 0 1 92.08 99.2994v.05ZM50.6 104.717a13.9898 13.9898 0 0 0 5.2 9.446 12.9512 12.9512 0 0 0 4.6458 2.443c1.6993.488 3.4807.623 5.2342.396a14.4186 14.4186 0 0 0 5.3615-1.753 14.4082 14.4082 0 0 0 4.2785-3.675 13.8006 13.8006 0 0 0-1.5801-19.7815A13.7351 13.7351 0 0 0 63.56 88.7937 15.2916 15.2916 0 0 0 54 94.1915a14.67 14.67 0 0 0-3.4 10.5255ZM87.67 44.5218l24.08 24.0702-7.08-33.8462 9.12-5.2579 25.07 23.4904-8.08-33.2864 12-6.8871 11.28 52.1686-11.7 6.7373-22.7-20.9115 6.23 30.3876-11.64 6.7772L75.7 51.409l11.97-6.8872ZM175 57.2566l-6.89-50.3994 13.08-1.7893 28.32 27.5488-4.2-30.8374L218.38 0l6.88 50.3994-13.08 1.7793-28.32-27.5388 4.21 30.8274L175 57.2566ZM263.62 15.7935l-5.75 39.244-13.06-1.9192 5.75-39.234-10.72-1.5693 1.63-11.0955L276 6.2675l-1.63 11.0954-10.75-1.5694ZM321 70.971a29.011 29.011 0 0 1-21.4-1.4794c-6.87-3.1387-12.46-8.5465-15.11-15.2038a26.5855 26.5855 0 0 1-1.773-10.3867 26.6073 26.6073 0 0 1 2.398-10.2605 26.6084 26.6084 0 0 1 6.195-8.5253 26.626 26.626 0 0 1 9.02-5.4533c6.78-2.3591 14.52-1.6694 21.39 1.4694 6.8 2.9528 12.211 8.3969 15.12 15.2138a26.6154 26.6154 0 0 1 1.767 10.3856 26.634 26.634 0 0 1-2.4 10.258 26.6408 26.6408 0 0 1-6.192 8.5248A26.6438 26.6438 0 0 1 321 70.971Zm-15.67-38.7841a13.991 13.991 0 0 0-4.662 2.9183 13.9946 13.9946 0 0 0-3.178 4.4886 12.988 12.988 0 0 0-1.192 5.1161 13.01 13.01 0 0 0 .932 5.1697 14.45 14.45 0 0 0 3.047 4.7651 14.4702 14.4702 0 0 0 4.643 3.2317 13.8355 13.8355 0 0 0 15.503-2.0884 13.822 13.822 0 0 0 3.267-4.429 13.7317 13.7317 0 0 0 1.219-5.2667 13.736 13.736 0 0 0-.909-5.329 15.257 15.257 0 0 0-7.62-7.9367 14.6554 14.6554 0 0 0-11.05-.6397ZM375.61 55.1674l-17.69 29.0982 31.22-14.9139 7.27 7.6168-16.9 29.9175L410 91.1527l9.53 9.9963-48 23.36-9.33-9.766 14.94-26.9889L349 100.959l-9.27-9.7063 26.34-46.0712 9.54 9.9859ZM384 143.032l47.33-18.713 4.85 12.275-20 34.066 28.95-11.435L450 171.49l-47.32 18.702-4.9-12.265 20-34.066-29 11.436-4.78-12.265ZM62.6899 337.742l-7.52-14.074-7.48 3.998 6.84 12.785-9.9 5.288-6.83-12.785-17.64 9.426-6.22-11.645 44.9-23.99 13.74 25.709-9.89 5.288ZM68.2299 392.72l-12.64-13.465-8.59 3.349-9.56-10.186 50.56-20.562 9.8701 10.516-24.0001 48.78-9.73-10.316 4.09-8.116Zm5.0001-9.447 8.0499-15.423-15.83 7.217 7.7801 8.206ZM90 422.727l26.19-43.622L133 389.231c3.14 1.879 6.59 4.578 7.51 9.126.52 2.539.09 5.928-2.23 9.786a13.1165 13.1165 0 0 1-4.46 4.618 8.003 8.003 0 0 1-5.58 1.28 12.655 12.655 0 0 1 4.39 6.187c.354 1.666.373 3.386.055 5.059a12.8326 12.8326 0 0 1-1.905 4.687 13.7914 13.7914 0 0 1-3.506 4.164 13.82 13.82 0 0 1-4.844 2.484c-3.81.999-8.95.229-14.32-2.999L90 422.727Zm16.62-1.999 2.55 1.529c3.14 1.89 6 3.129 8.06 2.429a4.896 4.896 0 0 0 2.6-2.259 5.1536 5.1536 0 0 0 .78-3.808c-.55-2.189-3.33-3.948-6.14-5.638l-2.36-1.409-5.49 9.156Zm10.56-17.593 2.09 1.26c1.18.699 3.22 1.749 5.15 1.209a4.938 4.938 0 0 0 2.77-2.249c.661-1.064.916-2.331.72-3.568-.29-1.15-1.31-2.569-3.53-3.899l-2.1-1.259-5.1 8.506ZM165.15 405.954l2.33 33.986 16.91-30.157 10.33 1.999 3.44 34.176L214 415.57l13.55 2.669L201.77 465l-13.25-2.609-3.36-30.667-15.27 26.989-13.18-2.599-5-52.839 13.44 2.679ZM285.89 451.226c-4.19 5.817-10.93 9.706-18.36 11.075a29.0109 29.0109 0 0 1-21.11-3.768 26.642 26.642 0 0 1-7.416-7.485 26.6291 26.6291 0 0 1-3.931-9.774c-.647-3.487-.59-7.068.167-10.532a26.6179 26.6179 0 0 1 4.24-9.644 30.4694 30.4694 0 0 1 18.391-11.072A30.4734 30.4734 0 0 1 279 413.831a26.6289 26.6289 0 0 1 7.416 7.485 26.6273 26.6273 0 0 1 3.93 9.774c.646 3.488.588 7.069-.171 10.534a26.6263 26.6263 0 0 1-4.245 9.642l-.04-.04Zm-35.11-22.751a13.9802 13.9802 0 0 0-2.134 5.067 14.0011 14.0011 0 0 0-.016 5.499c.313 1.74.981 3.397 1.962 4.869a12.9 12.9 0 0 0 3.738 3.687 14.4275 14.4275 0 0 0 5.225 2.138c1.865.362 3.783.352 5.645-.029 1.834-.269 3.594-.904 5.177-1.867a13.8206 13.8206 0 0 0 4.039-3.739 13.8159 13.8159 0 0 0 2.26-5.016c.41-1.807.452-3.678.124-5.501a13.6841 13.6841 0 0 0-2.024-5.01 13.6998 13.6998 0 0 0-3.806-3.837 15.3004 15.3004 0 0 0-10.79-2.119 14.7335 14.7335 0 0 0-9.4 5.858ZM313.45 391.09c3.35-1.829 7.92-3.648 13.08-1.999a16.7475 16.7475 0 0 1 9.31 7.947 14.6271 14.6271 0 0 1 1.907 5.461c.266 1.93.145 3.892-.357 5.774a14.197 14.197 0 0 1-4.47 6.457l24 10.596-14.39 7.887L322 422.137l9.39 17.123-11.57 6.348-24.47-44.622 18.1-9.896Zm4.48 23.561 2.21-1.21c1.74-1 4-2.779 4.63-4.888a6.3383 6.3383 0 0 0-.58-4.548 6.0012 6.0012 0 0 0-1.508-1.816 5.9982 5.9982 0 0 0-2.092-1.093c-1.65-.48-4-.09-6.51 1.3l-2.2 1.219 6.05 11.036ZM363.08 380.734l-3.59-26.249L371 342.86l3 31.317 34.56 3.089-12 12.175-27.82-3.199 15.72 15.484-9.27 9.396-36.26-35.715 9.26-9.397 14.89 14.724ZM408.38 349.187c3.7-1.179 8-3.708 10.18-7.717 1.3-2.329 1.33-4.138.94-5.317a4.4797 4.4797 0 0 0-.823-1.557 4.493 4.493 0 0 0-1.357-1.122 3.9304 3.9304 0 0 0-1.661-.484 3.9294 3.9294 0 0 0-1.709.274c-1.63.58-3.06 2.059-5.51 4.458l-2.6 2.489c-1.63 1.529-4.15 3.718-7.15 4.418-3.72.91-7-.56-9.28-1.809-5.48-2.999-7.65-6.997-8.51-9.996-1-3.529-.89-8.337 2.09-13.754 2.784-4.73 6.62-8.755 11.21-11.766l6.47 9.586c-4.65 2-6.36 4.419-7.21 5.998a6.3693 6.3693 0 0 0-.76 4.538c.11.512.326.996.632 1.421.306.425.697.782 1.148 1.048.69.445 1.518.623 2.33.5.59-.11 1.83-.47 4.15-2.769l3-2.949c2.42-2.329 5-4.708 8.87-5.647 3.66-.94 6.47-.18 9.54 1.519 4.08 2.239 7.47 5.418 8.9 10.396 1.71 5.907-.1 10.925-2.72 15.663a26.9875 26.9875 0 0 1-6.3 7.937 35.2886 35.2886 0 0 1-7.26 4.798l-6.61-10.156ZM26.95 258.824v-9.766l-8.47-4.888-8.46 4.888v9.766l8.46 4.878 8.47-4.878ZM439.44 258.824v-9.766l-8.46-4.888-8.46 4.888v9.766l8.46 4.878 8.46-4.878ZM247.06 329.145H143.47c-.748 0-1.465-.297-1.994-.825a2.8188 2.8188 0 0 1-.826-1.993V198.589c0-.749.297-1.467.825-1.997.529-.53 1.246-.829 1.995-.832h51.79c.751 0 1.47.298 2.001.829.531.53.829 1.25.829 2v73.14h49c12.666-.479 24.654-5.845 33.445-14.972a48.9652 48.9652 0 0 0 0-67.946c-8.791-9.127-20.779-14.493-33.445-14.972H143.47c-.748 0-1.465-.297-1.994-.826a2.8154 2.8154 0 0 1-.826-1.993v-51.769c0-.748.297-1.466.825-1.997.529-.53 1.246-.829 1.995-.832h103.59c14.06-.136 28.008 2.515 41.037 7.799a106.4103 106.4103 0 0 1 34.872 22.987 106.3675 106.3675 0 0 1 23.334 34.633 106.3353 106.3353 0 0 1 8.199 40.943c0 14.055-2.787 27.971-8.199 40.943a106.3675 106.3675 0 0 1-23.334 34.633 106.4103 106.4103 0 0 1-34.872 22.987 106.4346 106.4346 0 0 1-41.037 7.798Zm-100.76-5.647h100.76a100.7933 100.7933 0 0 0 50.375-13.495 100.7388 100.7388 0 0 0 36.878-36.862 100.7005 100.7005 0 0 0 13.501-50.355 100.687 100.687 0 0 0-13.494-50.356 100.7152 100.7152 0 0 0-36.879-36.869 100.7703 100.7703 0 0 0-50.381-13.491H146.3v46.121h100.76c14.357.194 28.06 6.032 38.144 16.249 10.083 10.217 15.737 23.992 15.737 38.344s-5.654 28.127-15.737 38.344c-10.084 10.217-23.787 16.054-38.144 16.249h-51.8c-.748 0-1.465-.297-1.994-.826a2.8188 2.8188 0 0 1-.826-1.993v-73.15H146.3v122.09Z" fill="#fff"/>
+                        <path d="M228.68 343.31H125.09c-.748 0-1.465-.297-1.994-.826a2.8188 2.8188 0 0 1-.826-1.993V212.743c0-.748.297-1.465.826-1.993a2.8194 2.8194 0 0 1 1.994-.826h51.8c.748 0 1.465.297 1.994.826.529.528.826 1.245.826 1.993v73.14h49c12.666-.479 24.654-5.845 33.445-14.971a48.9694 48.9694 0 0 0 13.703-33.974c0-12.67-4.911-24.847-13.703-33.973-8.791-9.127-20.779-14.493-33.445-14.972H125.09a2.83 2.83 0 0 1-1.995-.832 2.8297 2.8297 0 0 1-.825-1.997v-51.749a2.829 2.829 0 0 1 2.82-2.828h103.59c14.06-.137 28.008 2.514 41.037 7.798a106.4103 106.4103 0 0 1 34.872 22.987 106.3675 106.3675 0 0 1 23.334 34.633 106.3353 106.3353 0 0 1 8.199 40.943c0 14.055-2.787 27.971-8.199 40.943a106.3675 106.3675 0 0 1-23.334 34.633 106.4103 106.4103 0 0 1-34.872 22.987 106.4541 106.4541 0 0 1-41.037 7.799Zm-100.76-5.648h100.76a100.783 100.783 0 0 0 50.375-13.495 100.7388 100.7388 0 0 0 36.878-36.862 100.6977 100.6977 0 0 0 13.501-50.355 100.6898 100.6898 0 0 0-13.494-50.356 100.7125 100.7125 0 0 0-36.879-36.868 100.7637 100.7637 0 0 0-50.381-13.492H127.92v46.121h100.76c14.357.195 28.06 6.032 38.144 16.249 10.083 10.217 15.737 23.992 15.737 38.344s-5.654 28.128-15.737 38.345c-10.084 10.217-23.787 16.054-38.144 16.248h-51.79c-.749 0-1.467-.297-1.998-.825a2.8301 2.8301 0 0 1-.832-1.994v-73.15h-46.14v122.09Z" fill="#fff"/>
+                        <path d="M125.1 136.234a2.8181 2.8181 0 0 1-1.65-.52 2.8183 2.8183 0 0 1-1.035-1.387 2.8137 2.8137 0 0 1-.031-1.729c.172-.565.517-1.063.986-1.422l18.38-14.164c.294-.234.632-.407.994-.509.362-.101.741-.129 1.114-.081.373.047.733.169 1.058.358.325.189.608.441.834.742.231.295.4.634.5.995.099.361.126.739.078 1.11-.047.372-.168.731-.355 1.056-.186.324-.436.609-.733.837l-18.42 14.125c-.491.383-1.097.591-1.72.589ZM125.1 215.572a2.8261 2.8261 0 0 1-1.65-.521 2.8157 2.8157 0 0 1-1.035-1.386 2.8137 2.8137 0 0 1-.031-1.729c.172-.566.517-1.063.986-1.422l18.38-14.164a2.8202 2.8202 0 0 1 2.086-.565 2.8219 2.8219 0 0 1 1.874 1.075c.227.293.393.628.49.986.097.357.123.731.075 1.098-.047.368-.167.723-.351 1.044-.184.322-.43.604-.724.83l-18.38 14.164c-.491.384-1.097.592-1.72.59ZM125.1 188.003a2.812 2.812 0 0 1-1.65-.521 2.8157 2.8157 0 0 1-1.035-1.386 2.8137 2.8137 0 0 1-.031-1.729c.172-.566.517-1.063.986-1.422l18.38-14.164c.294-.226.629-.393.987-.49.357-.097.731-.122 1.099-.075.367.047.722.167 1.044.351.321.185.603.43.83.724.227.293.393.628.49.986.097.358.123.731.075 1.099-.047.367-.167.722-.351 1.043-.184.322-.43.604-.724.83l-18.38 14.164c-.491.384-1.097.592-1.72.59ZM176.89 215.572a2.8261 2.8261 0 0 1-1.65-.521 2.8157 2.8157 0 0 1-1.035-1.386 2.8211 2.8211 0 0 1-.031-1.729c.172-.566.517-1.063.986-1.422l18.38-14.164a2.8296 2.8296 0 0 1 2.087-.569c.744.095 1.419.481 1.878 1.074.459.592.663 1.343.569 2.086a2.8267 2.8267 0 0 1-1.074 1.877l-18.38 14.164a2.78 2.78 0 0 1-1.73.59ZM176.89 291.541c-.433.002-.861-.096-1.249-.287-.389-.19-.728-.469-.991-.813a2.8205 2.8205 0 0 1-.582-2.106c.047-.372.168-.731.356-1.055.187-.325.437-.61.736-.837l18.38-14.164a2.8281 2.8281 0 0 1 2.052-.481c.721.109 1.371.493 1.816 1.07.445.577.649 1.304.572 2.028a2.8312 2.8312 0 0 1-.99 1.861l-18.38 14.164c-.489.391-1.094.609-1.72.62ZM125.1 343.31c-.433.004-.861-.094-1.25-.285-.389-.191-.728-.47-.99-.815a2.7986 2.7986 0 0 1-.509-.993 2.8118 2.8118 0 0 1-.082-1.114c.048-.373.17-.732.359-1.057.189-.325.441-.609.742-.834l18.38-14.164a2.8281 2.8281 0 0 1 2.052-.481c.721.109 1.371.493 1.816 1.07.445.577.649 1.304.572 2.028a2.8312 2.8312 0 0 1-.99 1.861l-18.38 14.164c-.489.391-1.094.609-1.72.62Z" fill="#fff"/>
+                    </svg>
                 </div>
             </section>
             <!--CLIENT LOGOS-->
