@@ -546,6 +546,15 @@ a.button {
 .relative {
   position: relative;
 }
+.top-\[85vh\] {
+  top: 85vh;
+}
+.-left-24 {
+  left: -6rem;
+}
+.-top-16 {
+  top: -4rem;
+}
 .top-\[83\%\] {
   top: 83%;
 }
@@ -609,11 +618,11 @@ a.button {
 .row-end-3 {
   grid-row-end: 3;
 }
-.row-end-5 {
-  grid-row-end: 5;
-}
 .row-end-2 {
   grid-row-end: 2;
+}
+.row-end-5 {
+  grid-row-end: 5;
 }
 .row-end-4 {
   grid-row-end: 4;
@@ -622,14 +631,20 @@ a.button {
   margin-left: auto;
   margin-right: auto;
 }
-.mb-\[15\%\] {
-  margin-bottom: 15%;
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
 }
-.mb-1 {
-  margin-bottom: 0.25rem;
+.-mt-12 {
+  margin-top: -3rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mb-\[15\%\] {
+  margin-bottom: 15%;
 }
 .mb-6 {
   margin-bottom: 1.5rem;
@@ -643,8 +658,8 @@ a.button {
 .mb-12 {
   margin-bottom: 3rem;
 }
-.mb-3 {
-  margin-bottom: 0.75rem;
+.block {
+  display: block;
 }
 .flex {
   display: flex;
@@ -666,6 +681,9 @@ a.button {
 }
 .max-h-screen {
   max-height: 100vh;
+}
+.max-h-14 {
+  max-height: 3.5rem;
 }
 .w-full {
   width: 100%;
@@ -703,6 +721,18 @@ a.button {
 .min-w-\[16rem\] {
   min-width: 16rem;
 }
+.max-w-\[50rem\] {
+  max-width: 50rem;
+}
+.max-w-\[65ch\] {
+  max-width: 65ch;
+}
+.max-w-\[25\.4375rem\] {
+  max-width: 25.4375rem;
+}
+.max-w-layout {
+  max-width: 100rem;
+}
 .max-w-\[55ch\] {
   max-width: 55ch;
 }
@@ -715,15 +745,6 @@ a.button {
 .max-w-\[24rem\] {
   max-width: 24rem;
 }
-.max-w-layout {
-  max-width: 100rem;
-}
-.max-w-\[65ch\] {
-  max-width: 65ch;
-}
-.max-w-\[25\.4375rem\] {
-  max-width: 25.4375rem;
-}
 .max-w-\[16\.875rem\] {
   max-width: 16.875rem;
 }
@@ -733,11 +754,11 @@ a.button {
 .max-w-\[80rem\] {
   max-width: 80rem;
 }
-.flex-\[1_1_65ch\] {
-  flex: 1 1 65ch;
-}
 .flex-\[1_1_15rem\] {
   flex: 1 1 15rem;
+}
+.flex-\[1_1_65ch\] {
+  flex: 1 1 65ch;
 }
 .flex-\[1_1_22rem\] {
   flex: 1 1 22rem;
@@ -751,14 +772,23 @@ a.button {
 .flex-\[1_1_38ch\] {
   flex: 1 1 38ch;
 }
+.flex-\[1_1_50ch\] {
+  flex: 1 1 50ch;
+}
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+.flex-shrink {
+  flex-shrink: 1;
 }
 .shrink {
   flex-shrink: 1;
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+.flex-grow {
+  flex-grow: 1;
 }
 .grow {
   flex-grow: 1;
@@ -773,14 +803,26 @@ a.button {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.list-inside {
+  list-style-position: inside;
+}
+.list-disc {
+  list-style-type: disc;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-\[auto\] {
+  grid-template-columns: auto;
 }
 .grid-cols-\[repeat\(auto-fit\2c minmax\(8\.375rem\2c 1fr\)\)\] {
   grid-template-columns: repeat(auto-fit,minmax(8.375rem,1fr));
 }
 .grid-rows-\[8rem_auto\] {
   grid-template-rows: 8rem auto;
+}
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 .grid-rows-\[auto_18rem\] {
   grid-template-rows: auto 18rem;
@@ -809,11 +851,11 @@ a.button {
 .justify-between {
   justify-content: space-between;
 }
-.gap-9 {
-  gap: 2.25rem;
-}
 .gap-4 {
   gap: 1rem;
+}
+.gap-9 {
+  gap: 2.25rem;
 }
 .gap-12 {
   gap: 3rem;
@@ -854,6 +896,10 @@ a.button {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
 }
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
 .self-center {
   align-self: center;
 }
@@ -879,9 +925,17 @@ a.button {
   --tw-border-opacity: 1;
   border-color: rgb(33 33 33 / var(--tw-border-opacity));
 }
+.bg-\[\#CAD2D4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 210 212 / var(--tw-bg-opacity));
+}
 .bg-dark-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 68 / var(--tw-bg-opacity));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 .bg-blue {
   --tw-bg-opacity: 1;
@@ -894,6 +948,10 @@ a.button {
 .bg-grey-4 {
   --tw-bg-opacity: 1;
   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+}
+.bg-off-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 244 244 / var(--tw-bg-opacity));
 }
 .object-cover {
   -o-object-fit: cover;
@@ -921,6 +979,12 @@ a.button {
 .pt-7 {
   padding-top: 1.75rem;
 }
+.pt-\[10\%\] {
+  padding-top: 10%;
+}
+.pb-\[5\%\] {
+  padding-bottom: 5%;
+}
 .pt-1\/6 {
   padding-top: 16.666667%;
 }
@@ -942,9 +1006,6 @@ a.button {
 .pt-\[26\%\] {
   padding-top: 26%;
 }
-.pt-\[10\%\] {
-  padding-top: 10%;
-}
 .pl-\[10\%\] {
   padding-left: 10%;
 }
@@ -953,6 +1014,12 @@ a.button {
 }
 .pr-2 {
   padding-right: 0.5rem;
+}
+.pb-\[3\%\] {
+  padding-bottom: 3%;
+}
+.pb-\[8\%\] {
+  padding-bottom: 8%;
 }
 .text-center {
   text-align: center;
@@ -969,6 +1036,9 @@ a.button {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-\[5\.75rem\] {
+  font-size: 5.75rem;
 }
 .text-5xl {
   font-size: 3rem;
@@ -1005,6 +1075,9 @@ a.button {
 .capitalize {
   text-transform: capitalize;
 }
+.leading-\[100\%\] {
+  line-height: 100%;
+}
 .leading-none {
   line-height: 1;
 }
@@ -1022,6 +1095,10 @@ a.button {
   --tw-text-opacity: 1;
   color: rgb(106 162 185 / var(--tw-text-opacity));
 }
+.text-dark-blue {
+  --tw-text-opacity: 1;
+  color: rgb(30 41 68 / var(--tw-text-opacity));
+}
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(10 10 10 / var(--tw-text-opacity));
@@ -1038,15 +1115,11 @@ a.button {
   --tw-text-opacity: 1;
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
-.text-dark-blue {
-  --tw-text-opacity: 1;
-  color: rgb(30 41 68 / var(--tw-text-opacity));
+.opacity-40 {
+  opacity: 0.4;
 }
 .opacity-50 {
   opacity: 0.5;
-}
-.opacity-40 {
-  opacity: 0.4;
 }
 .mix-blend-multiply {
   mix-blend-mode: multiply;
@@ -1103,6 +1176,11 @@ a.button {
         width: -webkit-max-content;
         width: -moz-max-content;
         width: max-content;
+    }
+.h-content {
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
     }
     
     @font-face {
@@ -1173,6 +1251,30 @@ a.button {
 
 .timeline-container > * {
     scroll-snap-align: start;
+}
+
+.bg-before-dark-blue {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E2944;
+    mix-blend-mode: multiply;
+}
+
+.bg-before-blue {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6AA2B9;
+    mix-blend-mode: multiply;
 }
 
 @media only screen and (min-width: 768px) { 
@@ -1361,6 +1463,10 @@ a.button {
   .md\:pl-12 {
     padding-left: 3rem;
   }
+
+  .md\:text-\[8\.75rem\] {
+    font-size: 8.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1465,16 +1571,20 @@ a.button {
     padding-bottom: 12%;
   }
 
-  .lg\:pl-\[25\%\] {
-    padding-left: 25%;
-  }
-
   .lg\:pt-\[12\%\] {
     padding-top: 12%;
   }
 
+  .lg\:pb-\[6\%\] {
+    padding-bottom: 6%;
+  }
+
   .lg\:pr-0 {
     padding-right: 0px;
+  }
+
+  .lg\:pl-\[25\%\] {
+    padding-left: 25%;
   }
 
   .lg\:pb-40 {
@@ -1491,6 +1601,14 @@ a.button {
 
   .lg\:pl-\[4\.5rem\] {
     padding-left: 4.5rem;
+  }
+
+  .lg\:pb-\[3\%\] {
+    padding-bottom: 3%;
+  }
+
+  .lg\:pb-\[10\%\] {
+    padding-bottom: 10%;
   }
 }
 
@@ -1511,16 +1629,20 @@ a.button {
     position: absolute;
   }
 
+    .xl\:bottom-0 {
+    bottom: 0px;
+  }
+
+    .xl\:left-\[50\%\] {
+    left: 50%;
+  }
+
     .xl\:top-\[85\%\] {
     top: 85%;
   }
 
     .xl\:right-0 {
     right: 0px;
-  }
-
-    .xl\:bottom-0 {
-    bottom: 0px;
   }
 
     .xl\:left-0 {
@@ -1559,12 +1681,44 @@ a.button {
     grid-column-start: 1;
   }
 
+    .xl\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+    .xl\:col-end-3 {
+    grid-column-end: 3;
+  }
+
+    .xl\:col-end-2 {
+    grid-column-end: 2;
+  }
+
     .xl\:row-start-1 {
     grid-row-start: 1;
   }
 
+    .xl\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+    .xl\:row-end-3 {
+    grid-row-end: 3;
+  }
+
+    .xl\:row-end-2 {
+    grid-row-end: 2;
+  }
+
     .xl\:mx-auto {
     margin-left: auto;
+    margin-right: auto;
+  }
+
+    .xl\:ml-auto {
+    margin-left: auto;
+  }
+
+    .xl\:mr-auto {
     margin-right: auto;
   }
 
@@ -1588,6 +1742,10 @@ a.button {
     display: block;
   }
 
+    .xl\:inline {
+    display: inline;
+  }
+
     .xl\:flex {
     display: flex;
   }
@@ -1606,6 +1764,10 @@ a.button {
     max-height: fit-content;
   }
 
+    .xl\:max-h-\[45rem\] {
+    max-height: 45rem;
+  }
+
     .xl\:max-h-\[35rem\] {
     max-height: 35rem;
   }
@@ -1618,12 +1780,20 @@ a.button {
     width: 100%;
   }
 
-    .xl\:w-36 {
-    width: 9rem;
-  }
-
     .xl\:w-\[17rem\] {
     width: 17rem;
+  }
+
+    .xl\:w-\[90\%\] {
+    width: 90%;
+  }
+
+    .xl\:w-\[10\%\] {
+    width: 10%;
+  }
+
+    .xl\:w-36 {
+    width: 9rem;
   }
 
     .xl\:w-\[55\%\] {
@@ -1638,16 +1808,16 @@ a.button {
     max-width: 50rem;
   }
 
+    .xl\:max-w-none {
+    max-width: none;
+  }
+
     .xl\:max-w-5xl {
     max-width: 64rem;
   }
 
     .xl\:max-w-\[27rem\] {
     max-width: 27rem;
-  }
-
-    .xl\:max-w-none {
-    max-width: none;
   }
 
     .xl\:max-w-\[80ch\] {
@@ -1752,6 +1922,10 @@ a.button {
     grid-template-rows: 8rem calc(100vh - 7rem);
   }
 
+    .xl\:grid-rows-\[7rem_auto\] {
+    grid-template-rows: 7rem auto;
+  }
+
     .xl\:grid-rows-\[auto_12rem_auto_auto\] {
     grid-template-rows: auto 12rem auto auto;
   }
@@ -1780,6 +1954,14 @@ a.button {
     .xl\:gap-x-20 {
     -moz-column-gap: 5rem;
          column-gap: 5rem;
+  }
+
+    .xl\:justify-self-end {
+    justify-self: end;
+  }
+
+    .xl\:justify-self-center {
+    justify-self: center;
   }
 
     .xl\:overflow-hidden {
@@ -1835,6 +2017,22 @@ a.button {
     padding-right: 5rem;
   }
 
+    .xl\:pt-\[17rem\] {
+    padding-top: 17rem;
+  }
+
+    .xl\:pl-\[10\%\] {
+    padding-left: 10%;
+  }
+
+    .xl\:pb-\[8\%\] {
+    padding-bottom: 8%;
+  }
+
+    .xl\:pr-0 {
+    padding-right: 0px;
+  }
+
     .xl\:pl-\[35\%\] {
     padding-left: 35%;
   }
@@ -1851,10 +2049,6 @@ a.button {
     padding-top: 12%;
   }
 
-    .xl\:pr-0 {
-    padding-right: 0px;
-  }
-
     .xl\:pb-\[14\%\] {
     padding-bottom: 14%;
   }
@@ -1869,6 +2063,15 @@ a.button {
 
     .xl\:pt-\[5\%\] {
     padding-top: 5%;
+  }
+
+    .xl\:pb-\[4\%\] {
+    padding-bottom: 4%;
+  }
+
+    .xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
     .xl\:leading-\[145\%\] {
@@ -1919,12 +2122,24 @@ a.button {
     margin-left: calc((100vw - 100rem) / 2);
   }
 
+  .\34xl\:max-h-\[54\.3125rem\] {
+    max-height: 54.3125rem;
+  }
+
   .\34xl\:max-h-\[40rem\] {
     max-height: 40rem;
   }
 
   .\34xl\:w-80 {
     width: 20rem;
+  }
+
+  .\34xl\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .\34xl\:w-\[30\%\] {
+    width: 30%;
   }
 
   .\34xl\:w-48 {
@@ -1969,6 +2184,10 @@ a.button {
 
   .\34xl\:basis-\[20rem\] {
     flex-basis: 20rem;
+  }
+
+  .\34xl\:grid-rows-\[10rem_auto\] {
+    grid-template-rows: 10rem auto;
   }
 
   .\34xl\:grid-rows-\[auto_21rem_auto_auto\] {
@@ -2024,6 +2243,10 @@ a.button {
     padding-right: calc((100vw - 100rem) / 2);
   }
 
+  .\34xl\:pb-\[6\%\] {
+    padding-bottom: 6%;
+  }
+
   .\34xl\:pt-\[12\%\] {
     padding-top: 12%;
   }
@@ -2040,11 +2263,15 @@ a.button {
     padding-left: 0px;
   }
 
-  .\34xl\:text-\[3\.5rem\] {
-    font-size: 3.5rem;
+  .\34xl\:pb-\[3\%\] {
+    padding-bottom: 3%;
   }
 
   .\34xl\:text-\[4rem\] {
     font-size: 4rem;
+  }
+
+  .\34xl\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
   }
 }

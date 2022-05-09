@@ -76,6 +76,14 @@
     .w-content {
         width: max-content;
     }
+
+    .bg-gradient-blue-grey {
+        background: linear-gradient(to bottom, #1E2944 50%, #CAD2D4 50%);
+    }
+
+    .h-content {
+        height: max-content;
+    }
 }
 
 @layer components {
@@ -143,6 +151,30 @@
 
 .timeline-container > * {
     scroll-snap-align: start;
+}
+
+.bg-before-dark-blue {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1E2944;
+    mix-blend-mode: multiply;
+}
+
+.bg-before-blue {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6AA2B9;
+    mix-blend-mode: multiply;
 }
 
 @media only screen and (min-width: 768px) { 
