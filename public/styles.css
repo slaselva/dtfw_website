@@ -555,6 +555,12 @@ a.button {
 .-top-16 {
   top: -4rem;
 }
+.top-\[20\%\] {
+  top: 20%;
+}
+.right-\[-1\%\] {
+  right: -1%;
+}
 .top-\[83\%\] {
   top: 83%;
 }
@@ -575,12 +581,6 @@ a.button {
 }
 .left-\[-40\%\] {
   left: -40%;
-}
-.top-\[20\%\] {
-  top: 20%;
-}
-.right-\[-1\%\] {
-  right: -1%;
 }
 .top-\[75\%\] {
   top: 75%;
@@ -643,14 +643,14 @@ a.button {
 .mb-3 {
   margin-bottom: 0.75rem;
 }
-.mb-\[15\%\] {
-  margin-bottom: 15%;
-}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
 .mt-\[-7rem\] {
   margin-top: -7rem;
+}
+.mb-\[15\%\] {
+  margin-bottom: 15%;
 }
 .mb-8 {
   margin-bottom: 2rem;
@@ -694,6 +694,15 @@ a.button {
 .w-52 {
   width: 13rem;
 }
+.w-\[17rem\] {
+  width: 17rem;
+}
+.w-\[7\.5rem\] {
+  width: 7.5rem;
+}
+.w-\[102\%\] {
+  width: 102%;
+}
 .w-\[14rem\] {
   width: 14rem;
 }
@@ -705,15 +714,6 @@ a.button {
 }
 .w-\[160\%\] {
   width: 160%;
-}
-.w-\[17rem\] {
-  width: 17rem;
-}
-.w-\[7\.5rem\] {
-  width: 7.5rem;
-}
-.w-\[102\%\] {
-  width: 102%;
 }
 .w-80 {
   width: 20rem;
@@ -733,6 +733,12 @@ a.button {
 .max-w-layout {
   max-width: 100rem;
 }
+.max-w-\[50ch\] {
+  max-width: 50ch;
+}
+.max-w-\[16\.875rem\] {
+  max-width: 16.875rem;
+}
 .max-w-\[55ch\] {
   max-width: 55ch;
 }
@@ -745,17 +751,14 @@ a.button {
 .max-w-\[24rem\] {
   max-width: 24rem;
 }
-.max-w-\[16\.875rem\] {
-  max-width: 16.875rem;
-}
-.max-w-\[50ch\] {
-  max-width: 50ch;
-}
 .max-w-\[80rem\] {
   max-width: 80rem;
 }
 .flex-\[1_1_15rem\] {
   flex: 1 1 15rem;
+}
+.flex-\[1_1_50ch\] {
+  flex: 1 1 50ch;
 }
 .flex-\[1_1_65ch\] {
   flex: 1 1 65ch;
@@ -772,14 +775,11 @@ a.button {
 .flex-\[1_1_38ch\] {
   flex: 1 1 38ch;
 }
-.flex-\[1_1_50ch\] {
-  flex: 1 1 50ch;
+.flex-shrink {
+  flex-shrink: 1;
 }
 .flex-shrink-0 {
   flex-shrink: 0;
-}
-.flex-shrink {
-  flex-shrink: 1;
 }
 .shrink {
   flex-shrink: 1;
@@ -863,15 +863,19 @@ a.button {
 .gap-8 {
   gap: 2rem;
 }
-.gap-y-5 {
-  row-gap: 1.25rem;
+.gap-y-12 {
+  row-gap: 3rem;
 }
-.gap-y-4 {
-  row-gap: 1rem;
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
 }
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+.gap-y-4 {
+  row-gap: 1rem;
 }
 .gap-y-8 {
   row-gap: 2rem;
@@ -889,16 +893,12 @@ a.button {
 .gap-y-6 {
   row-gap: 1.5rem;
 }
-.gap-y-12 {
-  row-gap: 3rem;
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
-}
-.gap-x-20 {
-  -moz-column-gap: 5rem;
-       column-gap: 5rem;
 }
 .self-center {
   align-self: center;
@@ -941,25 +941,21 @@ a.button {
   --tw-bg-opacity: 1;
   background-color: rgb(106 162 185 / var(--tw-bg-opacity));
 }
-.bg-dark-grey {
+.bg-off-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
+  background-color: rgb(245 244 244 / var(--tw-bg-opacity));
 }
 .bg-grey-4 {
   --tw-bg-opacity: 1;
   background-color: rgb(26 26 26 / var(--tw-bg-opacity));
 }
-.bg-off-white {
+.bg-dark-grey {
   --tw-bg-opacity: 1;
-  background-color: rgb(245 244 244 / var(--tw-bg-opacity));
+  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .py-40 {
   padding-top: 10rem;
@@ -968,6 +964,10 @@ a.button {
 .py-1\/6 {
   padding-top: 16.666667%;
   padding-bottom: 16.666667%;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .py-\[10\%\] {
   padding-top: 10%;
@@ -982,8 +982,17 @@ a.button {
 .pt-\[10\%\] {
   padding-top: 10%;
 }
-.pb-\[5\%\] {
-  padding-bottom: 5%;
+.pb-\[3\%\] {
+  padding-bottom: 3%;
+}
+.pb-\[8\%\] {
+  padding-bottom: 8%;
+}
+.pb-1\/6 {
+  padding-bottom: 16.666667%;
+}
+.pt-\[26\%\] {
+  padding-top: 26%;
 }
 .pt-1\/6 {
   padding-top: 16.666667%;
@@ -1000,12 +1009,6 @@ a.button {
 .pt-8 {
   padding-top: 2rem;
 }
-.pb-1\/6 {
-  padding-bottom: 16.666667%;
-}
-.pt-\[26\%\] {
-  padding-top: 26%;
-}
 .pl-\[10\%\] {
   padding-left: 10%;
 }
@@ -1014,12 +1017,6 @@ a.button {
 }
 .pr-2 {
   padding-right: 0.5rem;
-}
-.pb-\[3\%\] {
-  padding-bottom: 3%;
-}
-.pb-\[8\%\] {
-  padding-bottom: 8%;
 }
 .text-center {
   text-align: center;
@@ -1399,12 +1396,12 @@ a.button {
     grid-row-end: 3;
   }
 
-  .md\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .md\:mt-\[-1rem\] {
     margin-top: -1rem;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:h-\[21rem\] {
@@ -1575,16 +1572,16 @@ a.button {
     padding-top: 12%;
   }
 
-  .lg\:pb-\[6\%\] {
-    padding-bottom: 6%;
+  .lg\:pb-\[3\%\] {
+    padding-bottom: 3%;
   }
 
   .lg\:pr-0 {
     padding-right: 0px;
   }
 
-  .lg\:pl-\[25\%\] {
-    padding-left: 25%;
+  .lg\:pb-\[10\%\] {
+    padding-bottom: 10%;
   }
 
   .lg\:pb-40 {
@@ -1595,20 +1592,16 @@ a.button {
     padding-top: 12rem;
   }
 
+  .lg\:pl-\[25\%\] {
+    padding-left: 25%;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
 
   .lg\:pl-\[4\.5rem\] {
     padding-left: 4.5rem;
-  }
-
-  .lg\:pb-\[3\%\] {
-    padding-bottom: 3%;
-  }
-
-  .lg\:pb-\[10\%\] {
-    padding-bottom: 10%;
   }
 }
 
@@ -1812,14 +1805,6 @@ a.button {
     max-width: none;
   }
 
-    .xl\:max-w-5xl {
-    max-width: 64rem;
-  }
-
-    .xl\:max-w-\[27rem\] {
-    max-width: 27rem;
-  }
-
     .xl\:max-w-\[80ch\] {
     max-width: 80ch;
   }
@@ -1834,6 +1819,14 @@ a.button {
 
     .xl\:max-w-\[8\.625rem\] {
     max-width: 8.625rem;
+  }
+
+    .xl\:max-w-5xl {
+    max-width: 64rem;
+  }
+
+    .xl\:max-w-\[27rem\] {
+    max-width: 27rem;
   }
 
     .xl\:shrink-0 {
@@ -1985,11 +1978,6 @@ a.button {
     background-color: rgb(30 41 68 / var(--tw-bg-opacity));
   }
 
-    .xl\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
     .xl\:py-\[10\%\] {
     padding-top: 10%;
     padding-bottom: 10%;
@@ -1998,6 +1986,11 @@ a.button {
     .xl\:py-\[5\%\] {
     padding-top: 5%;
     padding-bottom: 5%;
+  }
+
+    .xl\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
     .xl\:py-\[16\%\] {
@@ -2025,20 +2018,28 @@ a.button {
     padding-left: 10%;
   }
 
-    .xl\:pb-\[8\%\] {
-    padding-bottom: 8%;
+    .xl\:pb-\[4\%\] {
+    padding-bottom: 4%;
   }
 
     .xl\:pr-0 {
     padding-right: 0px;
   }
 
-    .xl\:pl-\[35\%\] {
-    padding-left: 35%;
+    .xl\:pb-\[10\%\] {
+    padding-bottom: 10%;
   }
 
     .xl\:pt-\[16\%\] {
     padding-top: 16%;
+  }
+
+    .xl\:pb-\[14\%\] {
+    padding-bottom: 14%;
+  }
+
+    .xl\:pl-\[35\%\] {
+    padding-left: 35%;
   }
 
     .xl\:pb-1\/6 {
@@ -2049,24 +2050,12 @@ a.button {
     padding-top: 12%;
   }
 
-    .xl\:pb-\[14\%\] {
-    padding-bottom: 14%;
-  }
-
     .xl\:pt-16 {
     padding-top: 4rem;
   }
 
-    .xl\:pb-\[10\%\] {
-    padding-bottom: 10%;
-  }
-
     .xl\:pt-\[5\%\] {
     padding-top: 5%;
-  }
-
-    .xl\:pb-\[4\%\] {
-    padding-bottom: 4%;
   }
 
     .xl\:text-5xl {
@@ -2142,6 +2131,10 @@ a.button {
     width: 30%;
   }
 
+  .\34xl\:w-\[22rem\] {
+    width: 22rem;
+  }
+
   .\34xl\:w-48 {
     width: 12rem;
   }
@@ -2152,10 +2145,6 @@ a.button {
 
   .\34xl\:w-\[35rem\] {
     width: 35rem;
-  }
-
-  .\34xl\:w-\[22rem\] {
-    width: 22rem;
   }
 
   .\34xl\:w-\[23rem\] {
@@ -2170,16 +2159,16 @@ a.button {
     max-width: 60rem;
   }
 
-  .\34xl\:max-w-\[32rem\] {
-    max-width: 32rem;
-  }
-
   .\34xl\:max-w-\[75ch\] {
     max-width: 75ch;
   }
 
   .\34xl\:max-w-\[69rem\] {
     max-width: 69rem;
+  }
+
+  .\34xl\:max-w-\[32rem\] {
+    max-width: 32rem;
   }
 
   .\34xl\:basis-\[20rem\] {
@@ -2243,16 +2232,16 @@ a.button {
     padding-right: calc((100vw - 100rem) / 2);
   }
 
-  .\34xl\:pb-\[6\%\] {
-    padding-bottom: 6%;
-  }
-
-  .\34xl\:pt-\[12\%\] {
-    padding-top: 12%;
+  .\34xl\:pb-\[3\%\] {
+    padding-bottom: 3%;
   }
 
   .\34xl\:pb-\[10\%\] {
     padding-bottom: 10%;
+  }
+
+  .\34xl\:pt-\[12\%\] {
+    padding-top: 12%;
   }
 
   .\34xl\:pt-\[10\%\] {
@@ -2261,10 +2250,6 @@ a.button {
 
   .\34xl\:pl-0 {
     padding-left: 0px;
-  }
-
-  .\34xl\:pb-\[3\%\] {
-    padding-bottom: 3%;
   }
 
   .\34xl\:text-\[4rem\] {
