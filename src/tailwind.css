@@ -123,6 +123,13 @@
         background-repeat: no-repeat;
     }
 
+    .bg-hero-case-study-gallery {
+        background-image: url(images/case-study-gallery_hero_2560w_1x.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
     .bg-good-people {
         background-image: url(images/who-we-are_good-people_1920w_1x.webp);
         background-size: cover;
@@ -229,6 +236,10 @@
 
     .bg-hero-who-we-are {
         background-image: url(images/who-we-are_hero_2560w_1x.webp);
+    }
+
+    .bg-hero-case-study-gallery {
+        background-image: url(images/case-study-gallery_hero_2560w_1x.webp);
     }
 
 }
