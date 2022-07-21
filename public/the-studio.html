@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>DTFW | Case Studies</title>
+        <title>DTFW | The Studio</title>
         <link rel="stylesheet" href="styles.css" />
         <meta name="description" content="">
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_ios_180x180.png">
@@ -12,11 +12,13 @@
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_16x16.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_32x32.png">
         <link rel="icon" href="images/favicon_svg_32x32.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </head>
     <body>
         <main class="relative h-full">
             <!--HERO, HEADER and NAV-->
-            <section class="relative w-full h-full max-h-screen overflow-hidden bg-hero-case-study-gallery grid grid-rows-[8rem_auto] grid-cols-1 xl:grid-rows-[8rem_calc(70vh-7rem)]">
+            <section class="relative w-full h-full max-h-screen overflow-hidden grid grid-rows-[8rem_auto] grid-cols-1 xl:grid-rows-[8rem_calc(100vh-7rem)]">
                 <!--HEADER-->
                 <header class="xl:z-30 xl:w-full xl:row-start-1 xl:col-start-1 xl:overflow-clip xl:overflow-y-visible xl:flex xl:justify-between">
                     <!--MOBILE NAV-->
@@ -49,62 +51,44 @@
                         </ul>
                     </nav>
                 </header>
-                <!--HERO MESSAGE-->
-                <div class="relative z-30 w-full px-screen max-w-layout mx-auto row-start-2 row-end-3 col-start-1 self-center">
-                    <!--HEADING-->
-                    <div class="mb-2 xs:mb-4">
-                        <!--CHECK OUT OUTLINE-->
-                        <svg class="mb-1 w-[28rem] " fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 446.13 62.19">
-                            <path d="M94.19 420.84a31.6 31.6 0 0 1-21.86-8.57c-6.23-5.6-9.39-13-9.39-22.07a29.58 29.58 0 0 1 8.6-21.36 31.68 31.68 0 0 1 10.2-6.93c8.18-3.49 16.81-3.3 25.78.41l.64.26V384l-1.87-2.5a14 14 0 0 0-5.26-4.28 15.69 15.69 0 0 0-6.77-1.51 13 13 0 0 0-10.08 4.16 14.78 14.78 0 0 0-3.91 10.43 14 14 0 0 0 3.93 10.3 13.64 13.64 0 0 0 10.29 4 15 15 0 0 0 6.5-1.51 15.71 15.71 0 0 0 5.34-4.1l1.83-2.19V418l-.73.22c-5.84 1.78-10.17 2.62-13.24 2.62Zm-.45-59.36a28.42 28.42 0 0 0-11.18 2.34 29.56 29.56 0 0 0-9.56 6.47 27.6 27.6 0 0 0-8 19.91c0 8.42 2.93 15.33 8.7 20.53a29.59 29.59 0 0 0 20.47 8c2.7 0 6.7-.79 11.9-2.35v-14.21a18.5 18.5 0 0 1-4.2 2.76 17.09 17.09 0 0 1-7.4 1.71A15.82 15.82 0 0 1 82.72 402a16.16 16.16 0 0 1-4.52-11.76 16.79 16.79 0 0 1 4.46-11.85 15.25 15.25 0 0 1 11.6-4.81 17.82 17.82 0 0 1 7.66 1.7 16.24 16.24 0 0 1 4.17 2.83V364a33.77 33.77 0 0 0-12.35-2.52ZM167.68 419.35H151v-23.11h-19.14v23.11h-16.73V360.9h16.73v21.75H151V360.9h16.73ZM153 417.27h12.6V363H153v21.76h-23.21V363h-12.58v54.3h12.58v-23.1H153ZM209.32 419.35h-34.15V360.9h34.15v14.48H191.9v7.35h16.53v14.49H191.9v7.64h17.42Zm-32.07-2.08h30v-10.33h-17.42v-11.8h16.52V384.8h-16.52v-11.49h17.42V363h-30ZM244.7 420.84a31.6 31.6 0 0 1-21.86-8.57c-6.23-5.6-9.39-13-9.39-22.07a29.58 29.58 0 0 1 8.6-21.36 31.57 31.57 0 0 1 10.2-6.93c8.18-3.49 16.8-3.3 25.78.41l.64.26V384l-1.87-2.5a14 14 0 0 0-5.26-4.28 15.69 15.69 0 0 0-6.77-1.51 13 13 0 0 0-10.08 4.16 14.78 14.78 0 0 0-3.91 10.43 14 14 0 0 0 3.93 10.3 13.63 13.63 0 0 0 10.29 4 15 15 0 0 0 6.5-1.51 15.81 15.81 0 0 0 5.34-4.1l1.83-2.19V418l-.73.22c-5.84 1.78-10.17 2.62-13.24 2.62Zm-.45-59.36a28.42 28.42 0 0 0-11.18 2.34 29.56 29.56 0 0 0-9.54 6.47 27.6 27.6 0 0 0-8 19.91c0 8.42 2.93 15.33 8.7 20.53a29.59 29.59 0 0 0 20.47 8c2.69 0 6.69-.79 11.89-2.35v-14.21a18.22 18.22 0 0 1-4.19 2.76 17.09 17.09 0 0 1-7.4 1.71 15.82 15.82 0 0 1-11.77-4.64 16.16 16.16 0 0 1-4.53-11.76 16.8 16.8 0 0 1 4.47-11.85 15.23 15.23 0 0 1 11.6-4.81 17.82 17.82 0 0 1 7.66 1.7 16.18 16.18 0 0 1 4.16 2.83V364a33.76 33.76 0 0 0-12.34-2.52ZM321.59 419.35h-21.7l-17.52-22.64v22.64h-16.73V360.9h16.73v21.41l16.32-21.41h20.91l-23.31 27.73Zm-20.68-2.08h16.28l-23.6-28.65L315.14 363h-15.42L282 386.23h-1.7V363h-12.58v54.3h12.58v-24.48h1.7ZM377.34 421.22c-9.32 0-17.1-3-23.13-9s-9.09-13.77-9.09-23.13a27.93 27.93 0 0 1 4.58-15.6 30.85 30.85 0 0 1 11.91-10.71 34.93 34.93 0 0 1 31.45 0 30.77 30.77 0 0 1 11.94 10.7 27.93 27.93 0 0 1 4.58 15.6c0 9.36-3.06 17.14-9.09 23.13s-13.84 9.01-23.15 9.01Zm-14.78-56.6a28.62 28.62 0 0 0-11.12 10 25.85 25.85 0 0 0-4.24 14.46c0 8.79 2.85 16.07 8.47 21.65s12.92 8.41 21.67 8.41 16-2.83 21.66-8.41 8.48-12.86 8.48-21.65a25.93 25.93 0 0 0-4.24-14.46 28.76 28.76 0 0 0-11.12-10 32.79 32.79 0 0 0-29.56 0ZM377.34 407a16.14 16.14 0 0 1-12-5.14 17.71 17.71 0 0 1-4.93-12.72 15 15 0 0 1 5-11.15 17.3 17.3 0 0 1 23.86 0 15 15 0 0 1 5 11.15 17.75 17.75 0 0 1-4.92 12.72 16.17 16.17 0 0 1-12.01 5.14Zm0-31.7a14.54 14.54 0 0 0-10.5 4.2 12.81 12.81 0 0 0-4.39 9.64 15.51 15.51 0 0 0 4.34 11.28 14.61 14.61 0 0 0 21.09 0 15.72 15.72 0 0 0 4.34-11.28 12.83 12.83 0 0 0-4.38-9.64 14.58 14.58 0 0 0-10.5-4.19ZM439.62 420.84c-8.47 0-15-2.21-19.42-6.58a18 18 0 0 1-5.11-8.84 53.11 53.11 0 0 1-1.09-11.78V360.9h16.73v30.72c0 1.77 0 3.25.11 4.42a21.63 21.63 0 0 0 .65 3.85 9 9 0 0 0 1.39 3.22 6.75 6.75 0 0 0 2.57 2 10.85 10.85 0 0 0 8.37 0 6.79 6.79 0 0 0 2.58-2 9.2 9.2 0 0 0 1.39-3.22 21.39 21.39 0 0 0 .64-3.85c.08-1.17.11-2.66.11-4.42V360.9h16.74v32.74a53.78 53.78 0 0 1-1.11 11.78 18.06 18.06 0 0 1-5.11 8.85c-4.44 4.36-10.97 6.57-19.44 6.57ZM416.06 363v30.67a51.42 51.42 0 0 0 1.05 11.33 16 16 0 0 0 4.54 7.83c4 4 10.06 6 18 6s13.94-2 18-6a15.94 15.94 0 0 0 4.54-7.84 51.35 51.35 0 0 0 1.06-11.31V363H450.6v28.65c0 1.8 0 3.33-.11 4.55a24.66 24.66 0 0 1-.7 4.22 11.09 11.09 0 0 1-1.75 4 8.9 8.9 0 0 1-3.34 2.6 13.07 13.07 0 0 1-10.17 0 9 9 0 0 1-3.33-2.6 11.09 11.09 0 0 1-1.75-4 23.72 23.72 0 0 1-.7-4.22c-.08-1.21-.11-2.74-.11-4.55V363ZM497 419.35h-16.77v-44h-12.12V360.9h41v14.48H497Zm-14.66-2.08h12.58v-44H507V363h-36.8v10.34h12.1Z" transform="translate(-62.94 -359.03)" style="fill:#fff"/>
-                        </svg>
-                        <h1 class="text-white text-5xl 4xl:text-[4rem]">our work</h1>
-                    </div>
-                    <!--DESCRIPTION-->
-                    <p class="mb-8 text-white max-w-[65ch]">We are the workers, the makers, the artists. We are the ones who get things done, no matter what. We thrive in bringing your vision to life.</p>
-                </div>
-                <!--OVERLAY TEXTURE-->
-                <div class="absolute z-20 w-full h-full mix-blend-multiply overflow-hidden">
+                <!--HERO IMAGE-->
+                <div class="relative w-full h-full z-20 row-start-1 row-end-3 col-start-1">
                     <picture>
                         <source media="(max-width: 480px)" srcset="
-                        images/images/overlay_480w.webp 1x,
-                        images/images/overlay_480w.webp 2x,
-                        images/images/overlay_480w.webp 3x">
+                        images/home_hero_480w_1x.webp 1x,
+                        images/home_hero_480w_1x.webp 2x,
+                        images/home_hero_480w_1x.webp 3x">
 
                         <source media="(min-width: 481px) and (max-width: 768px)" srcset="
-                        images/overlay_1024w.webp 1x,
-                        images/overlay_1024w.webp 2x,
-                        images/overlay_1024w.webp 3x">
+                        images/home_hero_768w_1x.webp 1x,
+                        images/home_hero_768w_1x.webp 2x,
+                        images/home_hero_768w_1x.webp 3x">
 
                         <source media="(min-width: 769px) and (max-width: 1024px)" srcset="
-                        images/overlay_1024w.webp 1x,
-                        images/overlay_1024w.webp 2x,
-                        images/overlay_1024w.webp 3x">
+                        images/home_hero_1024w_1x.webp 1x,
+                        images/home_hero_1024w_1x.webp 2x,
+                        images/home_hero_1024w_1x.webp 3x">
 
                         <source media="(min-width: 1025px) and (max-width: 1280px)" srcset="
-                        images/overlay_1366w.webp 1x,
-                        images/overlay_1366w.webp 2x,
-                        images/overlay_1366w.webp 3x">
+                        images/home_hero_1366w_1x.webp 1x,
+                        images/home_hero_1366w_1x.webp 2x,
+                        images/home_hero_1366w_1x.webp 3x">
 
                         <source media="(min-width: 1281px) and (max-width: 1440px)" srcset="
-                        images/overlay_1366w.webp 1x,
-                        images/overlay_1366w.webp 2x,
-                        images/overlay_1366w.webp 3x">
+                        images/home_hero_1366w_1x.webp 1x,
+                        images/home_hero_1366w_1x.webp 2x,
+                        images/home_hero_1366w_1x.webp 3x">
 
-                        <source media="(min-width: 1441px) and (max-width: 1920px)" srcset="
-                        images/overlay_1920w.webp 1x,
-                        images/overlay_1920w.webp 2x,
-                        images/overlay_1920w.webp 3x">
+                        <source media="(min-width: 1441px)" srcset="
+                        images/home_hero_2560w_1x.webp 1x,
+                        images/home_hero_2560w_1x.webp 2x,
+                        images/home_hero_2560w_1x.webp 3x">
 
-                        <source media="(min-width: 1921px)" srcset="
-                        images/overlay_1920w.webp 1x,
-                        images/overlay_1920w.webp 2x,
-                        images/overlay_1920w.webp 3x">
-
-                        <img class="w-full h-full xl:opacity-50" src="images/overlay_1920w.webp" alt="Katapult team behind the scenes happily working with each other">
+                        <img class="w-full object-cover max-h-screen xl:fixed xl:max-h-fit xl:h-full" src="images/home_hero_2560w_1x.webp" alt="palceholder hero image">
                     </picture>
                 </div>
                 <!--MOBILE LOGO-->
-                <div class="absolute w-52 z-10 md:w-[35rem] md:right-0 md:top-1/2 md:translate-y-[-50%] md:translate-x-[35%]">
+                <div class="relative w-52 z-30 row-start-1 row-end-3 col-start-1 self-center justify-self-center md:w-80 xl:animate-logo-fade-out 4xl:w-80">
                     <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 465">
                         <path d="M47.69 189.862 0 172.13l6-16.194c1.78-4.788 5.41-12.555 13.63-16.493 7.44-3.579 14.7-2.099 19.85-.18 6.29 2.339 11.29 5.998 14.2 12.365a27.5773 27.5773 0 0 1 .41 20.991l-6.4 17.243Zm-5.9-16.273.93-2.499c1.12-2.999 2.4-7.327.45-11.715-.92-2.129-3.15-5.318-8.44-7.287-4.43-1.649-8.73-1.699-11.82-.17-3.81 1.919-5.54 5.678-6.68 8.746l-1.12 2.999 26.68 9.926ZM92.08 99.3494c.57 7.1466-2 14.4636-6.82 20.3216-4.5731 5.826-11.2032 9.681-18.53 10.776a26.6169 26.6169 0 0 1-10.4867-.897 26.5991 26.5991 0 0 1-9.3179-4.892 26.5894 26.5894 0 0 1-6.6902-8.122 26.5736 26.5736 0 0 1-3.0152-10.08A28.9797 28.9797 0 0 1 44 86.0948a29.0025 29.0025 0 0 1 18.56-10.7856 26.6412 26.6412 0 0 1 10.4857.9023 26.6335 26.6335 0 0 1 9.3171 4.8926 26.6219 26.6219 0 0 1 6.6933 8.1187A26.6132 26.6132 0 0 1 92.08 99.2994v.05ZM50.6 104.717a13.9898 13.9898 0 0 0 5.2 9.446 12.9512 12.9512 0 0 0 4.6458 2.443c1.6993.488 3.4807.623 5.2342.396a14.4186 14.4186 0 0 0 5.3615-1.753 14.4082 14.4082 0 0 0 4.2785-3.675 13.8006 13.8006 0 0 0-1.5801-19.7815A13.7351 13.7351 0 0 0 63.56 88.7937 15.2916 15.2916 0 0 0 54 94.1915a14.67 14.67 0 0 0-3.4 10.5255ZM87.67 44.5218l24.08 24.0702-7.08-33.8462 9.12-5.2579 25.07 23.4904-8.08-33.2864 12-6.8871 11.28 52.1686-11.7 6.7373-22.7-20.9115 6.23 30.3876-11.64 6.7772L75.7 51.409l11.97-6.8872ZM175 57.2566l-6.89-50.3994 13.08-1.7893 28.32 27.5488-4.2-30.8374L218.38 0l6.88 50.3994-13.08 1.7793-28.32-27.5388 4.21 30.8274L175 57.2566ZM263.62 15.7935l-5.75 39.244-13.06-1.9192 5.75-39.234-10.72-1.5693 1.63-11.0955L276 6.2675l-1.63 11.0954-10.75-1.5694ZM321 70.971a29.011 29.011 0 0 1-21.4-1.4794c-6.87-3.1387-12.46-8.5465-15.11-15.2038a26.5855 26.5855 0 0 1-1.773-10.3867 26.6073 26.6073 0 0 1 2.398-10.2605 26.6084 26.6084 0 0 1 6.195-8.5253 26.626 26.626 0 0 1 9.02-5.4533c6.78-2.3591 14.52-1.6694 21.39 1.4694 6.8 2.9528 12.211 8.3969 15.12 15.2138a26.6154 26.6154 0 0 1 1.767 10.3856 26.634 26.634 0 0 1-2.4 10.258 26.6408 26.6408 0 0 1-6.192 8.5248A26.6438 26.6438 0 0 1 321 70.971Zm-15.67-38.7841a13.991 13.991 0 0 0-4.662 2.9183 13.9946 13.9946 0 0 0-3.178 4.4886 12.988 12.988 0 0 0-1.192 5.1161 13.01 13.01 0 0 0 .932 5.1697 14.45 14.45 0 0 0 3.047 4.7651 14.4702 14.4702 0 0 0 4.643 3.2317 13.8355 13.8355 0 0 0 15.503-2.0884 13.822 13.822 0 0 0 3.267-4.429 13.7317 13.7317 0 0 0 1.219-5.2667 13.736 13.736 0 0 0-.909-5.329 15.257 15.257 0 0 0-7.62-7.9367 14.6554 14.6554 0 0 0-11.05-.6397ZM375.61 55.1674l-17.69 29.0982 31.22-14.9139 7.27 7.6168-16.9 29.9175L410 91.1527l9.53 9.9963-48 23.36-9.33-9.766 14.94-26.9889L349 100.959l-9.27-9.7063 26.34-46.0712 9.54 9.9859ZM384 143.032l47.33-18.713 4.85 12.275-20 34.066 28.95-11.435L450 171.49l-47.32 18.702-4.9-12.265 20-34.066-29 11.436-4.78-12.265ZM62.6899 337.742l-7.52-14.074-7.48 3.998 6.84 12.785-9.9 5.288-6.83-12.785-17.64 9.426-6.22-11.645 44.9-23.99 13.74 25.709-9.89 5.288ZM68.2299 392.72l-12.64-13.465-8.59 3.349-9.56-10.186 50.56-20.562 9.8701 10.516-24.0001 48.78-9.73-10.316 4.09-8.116Zm5.0001-9.447 8.0499-15.423-15.83 7.217 7.7801 8.206ZM90 422.727l26.19-43.622L133 389.231c3.14 1.879 6.59 4.578 7.51 9.126.52 2.539.09 5.928-2.23 9.786a13.1165 13.1165 0 0 1-4.46 4.618 8.003 8.003 0 0 1-5.58 1.28 12.655 12.655 0 0 1 4.39 6.187c.354 1.666.373 3.386.055 5.059a12.8326 12.8326 0 0 1-1.905 4.687 13.7914 13.7914 0 0 1-3.506 4.164 13.82 13.82 0 0 1-4.844 2.484c-3.81.999-8.95.229-14.32-2.999L90 422.727Zm16.62-1.999 2.55 1.529c3.14 1.89 6 3.129 8.06 2.429a4.896 4.896 0 0 0 2.6-2.259 5.1536 5.1536 0 0 0 .78-3.808c-.55-2.189-3.33-3.948-6.14-5.638l-2.36-1.409-5.49 9.156Zm10.56-17.593 2.09 1.26c1.18.699 3.22 1.749 5.15 1.209a4.938 4.938 0 0 0 2.77-2.249c.661-1.064.916-2.331.72-3.568-.29-1.15-1.31-2.569-3.53-3.899l-2.1-1.259-5.1 8.506ZM165.15 405.954l2.33 33.986 16.91-30.157 10.33 1.999 3.44 34.176L214 415.57l13.55 2.669L201.77 465l-13.25-2.609-3.36-30.667-15.27 26.989-13.18-2.599-5-52.839 13.44 2.679ZM285.89 451.226c-4.19 5.817-10.93 9.706-18.36 11.075a29.0109 29.0109 0 0 1-21.11-3.768 26.642 26.642 0 0 1-7.416-7.485 26.6291 26.6291 0 0 1-3.931-9.774c-.647-3.487-.59-7.068.167-10.532a26.6179 26.6179 0 0 1 4.24-9.644 30.4694 30.4694 0 0 1 18.391-11.072A30.4734 30.4734 0 0 1 279 413.831a26.6289 26.6289 0 0 1 7.416 7.485 26.6273 26.6273 0 0 1 3.93 9.774c.646 3.488.588 7.069-.171 10.534a26.6263 26.6263 0 0 1-4.245 9.642l-.04-.04Zm-35.11-22.751a13.9802 13.9802 0 0 0-2.134 5.067 14.0011 14.0011 0 0 0-.016 5.499c.313 1.74.981 3.397 1.962 4.869a12.9 12.9 0 0 0 3.738 3.687 14.4275 14.4275 0 0 0 5.225 2.138c1.865.362 3.783.352 5.645-.029 1.834-.269 3.594-.904 5.177-1.867a13.8206 13.8206 0 0 0 4.039-3.739 13.8159 13.8159 0 0 0 2.26-5.016c.41-1.807.452-3.678.124-5.501a13.6841 13.6841 0 0 0-2.024-5.01 13.6998 13.6998 0 0 0-3.806-3.837 15.3004 15.3004 0 0 0-10.79-2.119 14.7335 14.7335 0 0 0-9.4 5.858ZM313.45 391.09c3.35-1.829 7.92-3.648 13.08-1.999a16.7475 16.7475 0 0 1 9.31 7.947 14.6271 14.6271 0 0 1 1.907 5.461c.266 1.93.145 3.892-.357 5.774a14.197 14.197 0 0 1-4.47 6.457l24 10.596-14.39 7.887L322 422.137l9.39 17.123-11.57 6.348-24.47-44.622 18.1-9.896Zm4.48 23.561 2.21-1.21c1.74-1 4-2.779 4.63-4.888a6.3383 6.3383 0 0 0-.58-4.548 6.0012 6.0012 0 0 0-1.508-1.816 5.9982 5.9982 0 0 0-2.092-1.093c-1.65-.48-4-.09-6.51 1.3l-2.2 1.219 6.05 11.036ZM363.08 380.734l-3.59-26.249L371 342.86l3 31.317 34.56 3.089-12 12.175-27.82-3.199 15.72 15.484-9.27 9.396-36.26-35.715 9.26-9.397 14.89 14.724ZM408.38 349.187c3.7-1.179 8-3.708 10.18-7.717 1.3-2.329 1.33-4.138.94-5.317a4.4797 4.4797 0 0 0-.823-1.557 4.493 4.493 0 0 0-1.357-1.122 3.9304 3.9304 0 0 0-1.661-.484 3.9294 3.9294 0 0 0-1.709.274c-1.63.58-3.06 2.059-5.51 4.458l-2.6 2.489c-1.63 1.529-4.15 3.718-7.15 4.418-3.72.91-7-.56-9.28-1.809-5.48-2.999-7.65-6.997-8.51-9.996-1-3.529-.89-8.337 2.09-13.754 2.784-4.73 6.62-8.755 11.21-11.766l6.47 9.586c-4.65 2-6.36 4.419-7.21 5.998a6.3693 6.3693 0 0 0-.76 4.538c.11.512.326.996.632 1.421.306.425.697.782 1.148 1.048.69.445 1.518.623 2.33.5.59-.11 1.83-.47 4.15-2.769l3-2.949c2.42-2.329 5-4.708 8.87-5.647 3.66-.94 6.47-.18 9.54 1.519 4.08 2.239 7.47 5.418 8.9 10.396 1.71 5.907-.1 10.925-2.72 15.663a26.9875 26.9875 0 0 1-6.3 7.937 35.2886 35.2886 0 0 1-7.26 4.798l-6.61-10.156ZM26.95 258.824v-9.766l-8.47-4.888-8.46 4.888v9.766l8.46 4.878 8.47-4.878ZM439.44 258.824v-9.766l-8.46-4.888-8.46 4.888v9.766l8.46 4.878 8.46-4.878ZM247.06 329.145H143.47c-.748 0-1.465-.297-1.994-.825a2.8188 2.8188 0 0 1-.826-1.993V198.589c0-.749.297-1.467.825-1.997.529-.53 1.246-.829 1.995-.832h51.79c.751 0 1.47.298 2.001.829.531.53.829 1.25.829 2v73.14h49c12.666-.479 24.654-5.845 33.445-14.972a48.9652 48.9652 0 0 0 0-67.946c-8.791-9.127-20.779-14.493-33.445-14.972H143.47c-.748 0-1.465-.297-1.994-.826a2.8154 2.8154 0 0 1-.826-1.993v-51.769c0-.748.297-1.466.825-1.997.529-.53 1.246-.829 1.995-.832h103.59c14.06-.136 28.008 2.515 41.037 7.799a106.4103 106.4103 0 0 1 34.872 22.987 106.3675 106.3675 0 0 1 23.334 34.633 106.3353 106.3353 0 0 1 8.199 40.943c0 14.055-2.787 27.971-8.199 40.943a106.3675 106.3675 0 0 1-23.334 34.633 106.4103 106.4103 0 0 1-34.872 22.987 106.4346 106.4346 0 0 1-41.037 7.798Zm-100.76-5.647h100.76a100.7933 100.7933 0 0 0 50.375-13.495 100.7388 100.7388 0 0 0 36.878-36.862 100.7005 100.7005 0 0 0 13.501-50.355 100.687 100.687 0 0 0-13.494-50.356 100.7152 100.7152 0 0 0-36.879-36.869 100.7703 100.7703 0 0 0-50.381-13.491H146.3v46.121h100.76c14.357.194 28.06 6.032 38.144 16.249 10.083 10.217 15.737 23.992 15.737 38.344s-5.654 28.127-15.737 38.344c-10.084 10.217-23.787 16.054-38.144 16.249h-51.8c-.748 0-1.465-.297-1.994-.826a2.8188 2.8188 0 0 1-.826-1.993v-73.15H146.3v122.09Z" fill="#fff"/>
                         <path d="M228.68 343.31H125.09c-.748 0-1.465-.297-1.994-.826a2.8188 2.8188 0 0 1-.826-1.993V212.743c0-.748.297-1.465.826-1.993a2.8194 2.8194 0 0 1 1.994-.826h51.8c.748 0 1.465.297 1.994.826.529.528.826 1.245.826 1.993v73.14h49c12.666-.479 24.654-5.845 33.445-14.971a48.9694 48.9694 0 0 0 13.703-33.974c0-12.67-4.911-24.847-13.703-33.973-8.791-9.127-20.779-14.493-33.445-14.972H125.09a2.83 2.83 0 0 1-1.995-.832 2.8297 2.8297 0 0 1-.825-1.997v-51.749a2.829 2.829 0 0 1 2.82-2.828h103.59c14.06-.137 28.008 2.514 41.037 7.798a106.4103 106.4103 0 0 1 34.872 22.987 106.3675 106.3675 0 0 1 23.334 34.633 106.3353 106.3353 0 0 1 8.199 40.943c0 14.055-2.787 27.971-8.199 40.943a106.3675 106.3675 0 0 1-23.334 34.633 106.4103 106.4103 0 0 1-34.872 22.987 106.4541 106.4541 0 0 1-41.037 7.799Zm-100.76-5.648h100.76a100.783 100.783 0 0 0 50.375-13.495 100.7388 100.7388 0 0 0 36.878-36.862 100.6977 100.6977 0 0 0 13.501-50.355 100.6898 100.6898 0 0 0-13.494-50.356 100.7125 100.7125 0 0 0-36.879-36.868 100.7637 100.7637 0 0 0-50.381-13.492H127.92v46.121h100.76c14.357.195 28.06 6.032 38.144 16.249 10.083 10.217 15.737 23.992 15.737 38.344s-5.654 28.128-15.737 38.345c-10.084 10.217-23.787 16.054-38.144 16.248h-51.79c-.749 0-1.467-.297-1.998-.825a2.8301 2.8301 0 0 1-.832-1.994v-73.15h-46.14v122.09Z" fill="#fff"/>
@@ -112,162 +96,70 @@
                     </svg>
                 </div>
             </section>
-            <!--CASE STUDIES-->
-            <section class="relative">
-                <!--OVERLAY TEXTURE-->
-                <div class="absolute z-20 w-full h-full mix-blend-multiply overflow-hidden">
-                    <picture>
-                        <source media="(max-width: 480px)" srcset="
-                        images/images/overlay_480w.webp 1x,
-                        images/images/overlay_480w.webp 2x,
-                        images/images/overlay_480w.webp 3x">
-
-                        <source media="(min-width: 481px) and (max-width: 768px)" srcset="
-                        images/overlay_1024w.webp 1x,
-                        images/overlay_1024w.webp 2x,
-                        images/overlay_1024w.webp 3x">
-
-                        <source media="(min-width: 769px) and (max-width: 1024px)" srcset="
-                        images/overlay_1024w.webp 1x,
-                        images/overlay_1024w.webp 2x,
-                        images/overlay_1024w.webp 3x">
-
-                        <source media="(min-width: 1025px) and (max-width: 1280px)" srcset="
-                        images/overlay_1366w.webp 1x,
-                        images/overlay_1366w.webp 2x,
-                        images/overlay_1366w.webp 3x">
-
-                        <source media="(min-width: 1281px) and (max-width: 1440px)" srcset="
-                        images/overlay_1366w.webp 1x,
-                        images/overlay_1366w.webp 2x,
-                        images/overlay_1366w.webp 3x">
-
-                        <source media="(min-width: 1441px) and (max-width: 1920px)" srcset="
-                        images/overlay_1920w.webp 1x,
-                        images/overlay_1920w.webp 2x,
-                        images/overlay_1920w.webp 3x">
-
-                        <source media="(min-width: 1921px)" srcset="
-                        images/overlay_1920w.webp 1x,
-                        images/overlay_1920w.webp 2x,
-                        images/overlay_1920w.webp 3x">
-
-                        <img class="w-full xl:opacity-50" src="images/overlay_1920w.webp" alt="Katapult team behind the scenes happily working with each other">
-                    </picture>
+            <!--HOW WE WORK-->
+            <section class="relative z-30 pt-1/6 pb-40 bg-white lg:pt-[12%] xl:pb-1/6 xl:pt-[12%] 4xl:py-[10%]">
+                <!--CONTENT-->
+                <div class="relative z-30 px-screen mx-auto max-w-layout text-center">
+                    <h1 class="mx-auto mb-32 font-bold text-[#C4C4C4] text-[9rem]">how we work</h1>
+                    <!--WORKFLOW DIAGRAM-->
+                    <div>
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="
+                            images/workflow-mobile.svg 1x,
+                            images/workflow-mobile.svg 2x,
+                            images/workflow-mobile.svg 3x">
+    
+                            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="
+                            images/workflow-tablet.svg 1x,
+                            images/workflow-tablet.svg 2x,
+                            images/workflow-tablet.svg 3x">
+    
+                            <source media="(min-width: 1200px)" srcset="
+                            images/workflow-desktop.svg 1x,
+                            images/workflow-desktop.svg 2x,
+                            images/workflow-desktop.svg 3x">
+    
+                            <img class="w-full" src="images/workflow-desktop.svg" alt="palceholder hero image">
+                        </picture>
+                    </div>
                 </div>
-                <!--GRID-->
-                <div class="relative z-30 px-screen py-[5%] max-w-layout mx-auto grid grid-cols-[repeat(auto-fit,18.5625rem)] gap-8 lg:py-[5%] xl:gap-y-20 xl:py-[5%] 4xl:py-[5%] 4xl:grid-cols-[repeat(auto-fit,22rem)] 4xl:gap-x-12 4xl:gap-y-24">
-                    <!--THE RAMBLER-->
-                    <div>
-                        <!--IMAGE-->
-                        <div class="mb-8">
-                            <img class="w-full" src="images/case-study-gallery_thumbnail-rambler_1x.webp" alt="">
-                        </div>
-                        <!--CONTENT-->
-                        <div>
-                            <h3 class="font-futura font-bold mb-3">the rambler</h3>
-                            <p class="mb-4">Using reclaimed materials can be a challenge, but our team of millworkers and finishers can create beautiful pieces worthy of any environment.</p>
-                            <!--LEARN MORE BUTTON-->
-                            <div class="relative w-full">
-                                <a class="button bg-blue" href="rambler.html">view more</a>
-                            </div>
-                        </div>
+            </section>
+            
+            <!--WHAT WE ARE WORKING ON-->
+            <section class="relative w-full h-full pb-1/6 pt-[26%] bg-grey-4 xl:py-[10%] xl:z-30">
+                <!--COPY CONTAINER-->
+                <div class="mb-6 px-screen flex flex-wrap gap-y-4 gap-x-8 max-w-layout xl:mb-[4%] 4xl:mx-auto 4xl:gap-x-[5%]">
+                    <!--HEADING CONTAINER-->
+                    <div class="flex-shrink-0">
+                        <!--OUTLINE-->
+                        <svg class="mb-1 w-[17rem] 4xl:w-[22rem]" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 389.29 59">
+                            <path d="M108.72 511.3H92l-9.19-30.45-10.34 30.45H55.82l-17.61-59H56l9.13 34 11-34h13.44l10.32 34 9.9-34h17.79ZM93.7 509H107l17.37-54.37h-12.84l-10.68 36.61H99l-11.15-36.62h-10l-11.91 36.61h-1.88l-9.84-36.61h-12.9L57.54 509h13.27l11.13-32.85h1.84ZM181.59 511.3h-17.05v-23.23h-19v23.23h-17v-59h17v21.88h19V452.3h17.05Zm-14.74-2.3h12.42v-54.38h-12.42v21.87h-23.59v-21.87h-12.42V509h12.42v-23.24h23.59ZM245.85 511.3h-18.18l-3.67-9.84h-18.73l-3.91 9.84h-18.1l22.69-59h17.68Zm-16.58-2.3h13.24L222 454.62h-14.46L186.62 509h13.17l3.91-9.85h21.89Zm-6.86-18.81h-15.47l6.87-20.36h1.81Zm-12.25-2.32h9l-4.49-13.47ZM268 511.3h-17.08v-44.2h-12.18v-14.8h41.41v14.8H268Zm-14.77-2.3h12.43v-44.22h12.17v-10.16h-36.78v10.16h12.18ZM373.13 511.3h-16.74l-9.19-30.45-10.32 30.45h-16.65l-17.61-59h17.78l9.13 34 11-34H354l10.32 34 9.9-34H392Zm-15-2.31h13.34l17.37-54.37h-12.9l-10.68 36.61h-1.87l-11.13-36.61h-10l-11.88 36.61h-1.88l-9.84-36.61h-12.9L322 509h13.27l11.13-32.85h1.84ZM427.5 511.3h-34.56v-59h34.56v14.8H410v7.16h16.6v14.79H410v7.46h17.5Zm-32.25-2.3h29.94v-10.18h-17.52v-12.08h16.62v-10.17h-16.62v-11.79h17.52v-10.16h-29.94Z" transform="translate(-38.21 -452.3)" style="fill:#6aa2b9"/>
+                        </svg>
+                        <h1 class="text-white text-5xl 4xl:text-[3.5rem]">are working on</h1>
                     </div>
-                    <!--CHURCH OF MALKOVICH-->
-                    <div>
-                        <!--IMAGE-->
-                        <div class="mb-8">
-                            <img class="w-full" src="images/case-study-gallery_thumbnail-malkovich_1x.webp" alt="">
-                        </div>
-                        <!--CONTENT-->
-                        <div>
-                            <h3 class="font-futura font-bold mb-3">church of malkovich</h3>
-                            <p class="mb-4">Using reclaimed materials can be a challenge, but our team of millworkers and finishers can create beautiful pieces worthy of any environment.</p>
-                            <!--LEARN MORE BUTTON-->
-                            <div class="relative w-full">
-                                <a class="button bg-blue" href="malkovich.html">view more</a>
-                            </div>
-                        </div>
+                    <!--DESCRIPTION CONTAINER-->
+                    <div class="flex-[1_1_65ch] max-w-[65ch] 4xl:max-w-[75ch]">
+                        <p class="mb-1 lg:mb-2 text-white">Lorem Ipsum is simply dummyprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummyprinting and typesetting industry.</p>
+                        <p class="text-white">Lorem Ipsum is simply dummyprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text of th</p>
                     </div>
-                    <!--THE GONDOLA-->
-                    <div>
-                        <!--IMAGE-->
-                        <div class="mb-8">
-                            <img class="w-full" src="images/case-study-gallery_thumbnail-gondola_1x.webp" alt="">
-                        </div>
-                        <!--CONTENT-->
-                        <div>
-                            <h3 class="font-futura font-bold mb-3">the gondola</h3>
-                            <p class="mb-4">Using reclaimed materials can be a challenge, but our team of millworkers and finishers can create beautiful pieces worthy of any environment.</p>
-                            <!--LEARN MORE BUTTON-->
-                            <div class="relative w-full">
-                                <a class="button bg-blue" href="gondola.html">view more</a>
-                            </div>
-                        </div>
+                </div>
+                <!--IMAGES GRID-->
+                <div class="px-screen flex flex-wrap gap-4 lg:pr-0 lg:flex-nowrap xl:pr-0 4xl:ml-[calc((100vw-100rem)/2)] 4xl:justify-end">
+                    <!--IMAGE 1 CONTAINER-->
+                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
+                        <img class="w-full" src="images/home_working-on_1_1x.webp" alt="">
                     </div>
-                    <!--PEYCHEAUD-->
-                    <div>
-                        <!--IMAGE-->
-                        <div class="mb-8">
-                            <img class="w-full" src="images/case-study-gallery_thumbnail-peychaud_1x.webp" alt="">
-                        </div>
-                        <!--CONTENT-->
-                        <div>
-                            <h3 class="font-futura font-bold mb-3">peycheaud</h3>
-                            <p class="mb-4">Using reclaimed materials can be a challenge, but our team of millworkers and finishers can create beautiful pieces worthy of any environment.</p>
-                            <!--LEARN MORE BUTTON-->
-                            <div class="relative w-full">
-                                <a class="button bg-blue" href="peychaud.html">view more</a>
-                            </div>
-                        </div>
+                    <!--IMAGE 2 CONTAINER-->
+                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
+                        <img class="w-full" src="images/home_working-on_2_1x.webp" alt="">
                     </div>
-                    <!--SENEGENCE-->
-                    <div>
-                        <!--IMAGE-->
-                        <div class="mb-8">
-                            <img class="w-full" src="images/case-study-gallery_thumbnail-senegence_1x.webp" alt="">
-                        </div>
-                        <!--CONTENT-->
-                        <div>
-                            <h3 class="font-futura font-bold mb-3">senegence</h3>
-                            <p class="mb-4">Using reclaimed materials can be a challenge, but our team of millworkers and finishers can create beautiful pieces worthy of any environment.</p>
-                            <!--LEARN MORE BUTTON-->
-                            <div class="relative w-full">
-                                <a class="button bg-blue" href="#">view more</a>
-                            </div>
-                        </div>
+                    <!--IMAGE 3 CONTAINER-->
+                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
+                        <img class="w-full" src="images/home_working-on_3_1x.webp" alt="">
                     </div>
-                    <!--WALK ONS-->
-                    <div>
-                        <!--IMAGE-->
-                        <div class="mb-8">
-                            <img class="w-full" src="images/case-study-gallery_thumbnail-walk-ons_1x.webp" alt="">
-                        </div>
-                        <!--CONTENT-->
-                        <div>
-                            <h3 class="font-futura font-bold mb-3">walk ons</h3>
-                            <p class="mb-4">Using reclaimed materials can be a challenge, but our team of millworkers and finishers can create beautiful pieces worthy of any environment.</p>
-                            <!--LEARN MORE BUTTON-->
-                            <div class="relative w-full">
-                                <a class="button bg-blue" href="walk-ons.html">view more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--MONAT-->
-                    <div>
-                        <!--IMAGE-->
-                        <div class="mb-8">
-                            <img class="w-full" src="images/case-study-gallery_thumbnail-monat_1x.webp" alt="">
-                        </div>
-                        <!--CONTENT-->
-                        <div>
-                            <h3 class="font-futura font-bold mb-3">monat</h3>
-                            <p class="mb-4">Using reclaimed materials can be a challenge, but our team of millworkers and finishers can create beautiful pieces worthy of any environment.</p>
-                            <!--LEARN MORE BUTTON-->
-                            <div class="relative w-full">
-                                <a class="button bg-blue" href="#">view more</a>
-                            </div>
-                        </div>
+                    <!--IMAGE 4 CONTAINER-->
+                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
+                        <img class="w-full" src="images/home_working-on_4_1x.webp" alt="">
                     </div>
                 </div>
             </section>
@@ -299,6 +191,6 @@
                     <h5 class="text-xs text-[#9F9DA3] font-semibold">© copyright 2022  Downtown Fabworks</h5>
                 </div>
             </footer>
-        </main>
+        </main>  
     </body>
 </html>
