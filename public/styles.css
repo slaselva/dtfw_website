@@ -552,6 +552,12 @@ a.button {
 .relative {
   position: relative;
 }
+.left-0 {
+  left: 0px;
+}
+.top-0 {
+  top: 0px;
+}
 .top-\[85vh\] {
   top: 85vh;
 }
@@ -593,12 +599,6 @@ a.button {
 }
 .right-0 {
   right: 0px;
-}
-.left-0 {
-  left: 0px;
-}
-.top-0 {
-  top: 0px;
 }
 .z-30 {
   z-index: 30;
@@ -673,14 +673,11 @@ a.button {
 .mb-\[15\%\] {
   margin-bottom: 15%;
 }
-.mb-12 {
-  margin-bottom: 3rem;
-}
-.mb-20 {
-  margin-bottom: 5rem;
-}
 .mb-32 {
   margin-bottom: 8rem;
+}
+.mb-12 {
+  margin-bottom: 3rem;
 }
 .block {
   display: block;
@@ -715,8 +712,8 @@ a.button {
 .w-\[17\.75rem\] {
   width: 17.75rem;
 }
-.w-\[14rem\] {
-  width: 14rem;
+.w-\[28rem\] {
+  width: 28rem;
 }
 .w-52 {
   width: 13rem;
@@ -730,14 +727,17 @@ a.button {
 .w-\[102\%\] {
   width: 102%;
 }
-.w-\[28rem\] {
-  width: 28rem;
+.w-\[14rem\] {
+  width: 14rem;
 }
 .w-\[4\.5rem\] {
   width: 4.5rem;
 }
 .w-\[160\%\] {
   width: 160%;
+}
+.w-auto {
+  width: auto;
 }
 .w-80 {
   width: 20rem;
@@ -750,6 +750,12 @@ a.button {
 }
 .max-w-\[65ch\] {
   max-width: 65ch;
+}
+.max-w-\[70\%\] {
+  max-width: 70%;
+}
+.max-w-\[2rem\] {
+  max-width: 2rem;
 }
 .max-w-\[50rem\] {
   max-width: 50rem;
@@ -778,12 +784,6 @@ a.button {
 .max-w-\[80rem\] {
   max-width: 80rem;
 }
-.max-w-\[2rem\] {
-  max-width: 2rem;
-}
-.max-w-\[70\%\] {
-  max-width: 70%;
-}
 .flex-\[1_1_15rem\] {
   flex: 1 1 15rem;
 }
@@ -811,11 +811,11 @@ a.button {
 .flex-shrink-0 {
   flex-shrink: 0;
 }
-.shrink {
-  flex-shrink: 1;
-}
 .shrink-0 {
   flex-shrink: 0;
+}
+.shrink {
+  flex-shrink: 1;
 }
 .flex-grow {
   flex-grow: 1;
@@ -899,6 +899,10 @@ a.button {
 .gap-12 {
   gap: 3rem;
 }
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
 .gap-y-12 {
   row-gap: 3rem;
 }
@@ -921,10 +925,6 @@ a.button {
 }
 .gap-y-10 {
   row-gap: 2.5rem;
-}
-.gap-x-3 {
-  -moz-column-gap: 0.75rem;
-       column-gap: 0.75rem;
 }
 .gap-y-6 {
   row-gap: 1.5rem;
@@ -965,6 +965,10 @@ a.button {
   --tw-bg-opacity: 1;
   background-color: rgb(106 162 185 / var(--tw-bg-opacity));
 }
+.bg-grey-6 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 46 46 / var(--tw-bg-opacity));
+}
 .bg-\[\#CAD2D4\] {
   --tw-bg-opacity: 1;
   background-color: rgb(202 210 212 / var(--tw-bg-opacity));
@@ -989,10 +993,6 @@ a.button {
   --tw-bg-opacity: 1;
   background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
-.bg-grey-6 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(46 46 46 / var(--tw-bg-opacity));
-}
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1000,6 +1000,10 @@ a.button {
 .py-\[5\%\] {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 .py-40 {
   padding-top: 10rem;
@@ -1016,10 +1020,6 @@ a.button {
 .py-\[10\%\] {
   padding-top: 10%;
   padding-bottom: 10%;
-}
-.py-9 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
 }
 .pl-8 {
   padding-left: 2rem;
@@ -1086,6 +1086,10 @@ a.button {
   font-size: 3rem;
   line-height: 1;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .text-\[5\.75rem\] {
   font-size: 5.75rem;
 }
@@ -1101,16 +1105,12 @@ a.button {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-\[9rem\] {
+  font-size: 9rem;
 }
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-.text-\[9rem\] {
-  font-size: 9rem;
 }
 .font-medium {
   font-weight: 500;
@@ -1118,11 +1118,11 @@ a.button {
 .font-bold {
   font-weight: 700;
 }
-.font-normal {
-  font-weight: 400;
-}
 .font-semibold {
   font-weight: 600;
+}
+.font-normal {
+  font-weight: 400;
 }
 .uppercase {
   text-transform: uppercase;
@@ -1146,6 +1146,10 @@ a.button {
   --tw-text-opacity: 1;
   color: rgb(250 250 250 / var(--tw-text-opacity));
 }
+.text-\[\#9F9DA3\] {
+  --tw-text-opacity: 1;
+  color: rgb(159 157 163 / var(--tw-text-opacity));
+}
 .text-blue {
   --tw-text-opacity: 1;
   color: rgb(106 162 185 / var(--tw-text-opacity));
@@ -1166,17 +1170,13 @@ a.button {
   --tw-text-opacity: 1;
   color: rgb(114 114 114 / var(--tw-text-opacity));
 }
-.text-\[\#9F9DA3\] {
+.text-\[\#C4C4C4\] {
   --tw-text-opacity: 1;
-  color: rgb(159 157 163 / var(--tw-text-opacity));
+  color: rgb(196 196 196 / var(--tw-text-opacity));
 }
 .text-dark-grey {
   --tw-text-opacity: 1;
   color: rgb(33 33 33 / var(--tw-text-opacity));
-}
-.text-\[\#C4C4C4\] {
-  --tw-text-opacity: 1;
-  color: rgb(196 196 196 / var(--tw-text-opacity));
 }
 .opacity-40 {
   opacity: 0.4;
@@ -1235,11 +1235,6 @@ a.button {
     padding-right: 0px;
   }
 }
-.w-content {
-        width: -webkit-max-content;
-        width: -moz-max-content;
-        width: max-content;
-    }
 .h-content {
         height: -webkit-max-content;
         height: -moz-max-content;
@@ -1536,23 +1531,18 @@ a.button {
     justify-content: space-between;
   }
 
-  .md\:gap-x-12 {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
-  }
-
   .md\:gap-y-4 {
     row-gap: 1rem;
-  }
-
-  .md\:gap-x-16 {
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
   }
 
   .md\:gap-x-20 {
     -moz-column-gap: 5rem;
          column-gap: 5rem;
+  }
+
+  .md\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 
   .md\:self-start {
@@ -2062,6 +2052,10 @@ a.button {
     justify-content: space-between;
   }
 
+    .xl\:gap-y-20 {
+    row-gap: 5rem;
+  }
+
     .xl\:gap-y-8 {
     row-gap: 2rem;
   }
@@ -2074,10 +2068,6 @@ a.button {
     .xl\:gap-x-20 {
     -moz-column-gap: 5rem;
          column-gap: 5rem;
-  }
-
-    .xl\:gap-y-20 {
-    row-gap: 5rem;
   }
 
     .xl\:justify-self-end {
@@ -2330,12 +2320,17 @@ a.button {
     justify-content: space-between;
   }
 
-  .\34xl\:gap-12 {
-    gap: 3rem;
-  }
-
   .\34xl\:gap-24 {
     gap: 6rem;
+  }
+
+  .\34xl\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
+  .\34xl\:gap-y-24 {
+    row-gap: 6rem;
   }
 
   .\34xl\:gap-x-\[5\%\] {
@@ -2351,19 +2346,6 @@ a.button {
   .\34xl\:gap-x-24 {
     -moz-column-gap: 6rem;
          column-gap: 6rem;
-  }
-
-  .\34xl\:gap-x-12 {
-    -moz-column-gap: 3rem;
-         column-gap: 3rem;
-  }
-
-  .\34xl\:gap-y-20 {
-    row-gap: 5rem;
-  }
-
-  .\34xl\:gap-y-24 {
-    row-gap: 6rem;
   }
 
   .\34xl\:py-\[5\%\] {
