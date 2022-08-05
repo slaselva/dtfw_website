@@ -87,7 +87,7 @@
 }
 
 @layer components {
-    a.button {
+    a.button, input.button {
         @apply inline-flex items-center justify-center min-h-[44px] min-w-[36ch] w-full py-4 px-3 text-white uppercase font-futura font-bold leading-[100%] tracking-[.075em] text-center md:w-auto;
     }
 

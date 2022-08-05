@@ -14,6 +14,7 @@
         <link rel="icon" href="images/favicon_svg_32x32.svg" type="image/svg+xml">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
     </head>
     <body>
         <main class="relative h-full">
@@ -139,28 +140,73 @@
                     </div>
                     <!--DESCRIPTION CONTAINER-->
                     <div class="flex-[1_1_65ch] max-w-[65ch] 4xl:max-w-[75ch]">
-                        <p class="mb-1 lg:mb-2 text-white">Lorem Ipsum is simply dummyprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummyprinting and typesetting industry.</p>
-                        <p class="text-white">Lorem Ipsum is simply dummyprinting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text of th</p>
+                        <p class="mb-1 lg:mb-2 text-white">Life is a journey, and we are walking through this journey with you. Come take a look at the pathways that we take to bring your journey to completion.</p>
                     </div>
                 </div>
                 <!--IMAGES GRID-->
-                <div class="px-screen flex flex-wrap gap-4 lg:pr-0 lg:flex-nowrap xl:pr-0 4xl:ml-[calc((100vw-100rem)/2)] 4xl:justify-end">
-                    <!--IMAGE 1 CONTAINER-->
-                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
-                        <img class="w-full" src="images/home_working-on_1_1x.webp" alt="">
-                    </div>
-                    <!--IMAGE 2 CONTAINER-->
-                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
-                        <img class="w-full" src="images/home_working-on_2_1x.webp" alt="">
-                    </div>
-                    <!--IMAGE 3 CONTAINER-->
-                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
-                        <img class="w-full" src="images/home_working-on_3_1x.webp" alt="">
-                    </div>
-                    <!--IMAGE 4 CONTAINER-->
-                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
-                        <img class="w-full" src="images/home_working-on_4_1x.webp" alt="">
-                    </div>
+                <!-- LightWidget WIDGET -->
+                
+                <div class="px-screen lg:pr-0 xl:pr-0 4xl:ml-[calc((100vw-100rem)/2)]">
+                    <iframe src="//lightwidget.com/widgets/d8d10a87aae25da5a2795e6a76451980.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+                </div>
+            </section>
+            <!--CONTACT FORM-->
+            <section class="relative z-30 w-full h-full py-1/6 bg-dark-blue xl:py-[5%]">
+                <!--CONTAINER-->
+                <div class="px-screen max-w-layout xl:mx-auto">
+                    <!--HEADING-->
+                    <h1 class="text-light-grey text-5xl mb-12 4xl:text-[3.5rem]">get in touch</h1>
+                    <!--CONTACT FORM-->
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mrgdzreo" method="post">
+                        <fieldset class="mb-4" id="fs-frm-inputs">
+                            <!--FLEX CONTAINER-->
+                            <div class="flex flex-wrap gap-10 justify-between">
+                                <!--NAME AND EMAIL-->
+                                <div class="w-full flex-[1_1_37rem] max-w-[37rem]">
+                                    <!--NAME-->
+                                    <div class="mb-10">
+                                        <label class="block font-futura font-bold text-[1.75rem] text-light-grey mb-2" for="full-name">Full Name</label>
+                                        <div class="relative">
+                                            <i class="absolute z-10 w-14 ml-4 mt-6 border-r-2 border-blue">
+                                                <svg class="w-7" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                                                    <path d="M8.75 7.5835c0 2.8945 2.3555 5.25 5.25 5.25s5.25-2.3555 5.25-5.25-2.3555-5.25-5.25-5.25-5.25 2.3555-5.25 5.25Zm14.5833 16.9167H24.5v-1.1667c0-4.5022-3.6645-8.1667-8.1667-8.1667h-4.6666c-4.5034 0-8.1667 3.6645-8.1667 8.1667v1.1667h19.8333Z" fill="#6AA2B9"/>
+                                              </svg>
+                                            </i>
+                                            <input class="bg-grey-4 border-2 border-grey w-full h-[4.6875rem] max-w-[37rem] py-4 pl-24 text-light-grey placeholder:font-sourceSansPro placeholder:text-light-grey focus:outline-none focus:border-blue" type="text" name="name" id="full-name" placeholder="" required="">
+                                        </div>
+                                    </div>
+                                    <!--EMAIL-->
+                                    <div>
+                                        <label class="block font-futura font-bold text-[1.75rem] text-light-grey mb-2" for="email-address">Email Address</label>
+                                        <div>
+                                            <i class="absolute z-10 w-14 ml-4 mt-6 border-r-2 border-blue">
+                                                <svg class="w-7" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                                                    <path d="M8.75 7.5835c0 2.8945 2.3555 5.25 5.25 5.25s5.25-2.3555 5.25-5.25-2.3555-5.25-5.25-5.25-5.25 2.3555-5.25 5.25Zm14.5833 16.9167H24.5v-1.1667c0-4.5022-3.6645-8.1667-8.1667-8.1667h-4.6666c-4.5034 0-8.1667 3.6645-8.1667 8.1667v1.1667h19.8333Z" fill="#6AA2B9"/>
+                                              </svg>
+                                            </i>
+                                            <input class="bg-grey-4 border-2 border-grey w-full h-[4.6875rem] max-w-[37rem] py-4 pl-24 text-light-grey placeholder:font-sourceSansPro placeholder:text-light-grey focus:outline-none focus:border-blue" type="email" name="_replyto" id="email-address" placeholder="" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--MESSAGE-->
+                                <div class="w-full flex-[1_1_46rem] max-w-[46rem]">
+                                    <label class="block font-futura font-bold text-[1.75rem] text-light-grey mb-2" for="message">Your Message</label>
+                                    <div class="relative">
+                                        <i class="absolute z-10 w-14 ml-4 mt-6 border-r-2 border-blue">
+                                            <svg class="w-7" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                                                <path d="M8.75 7.5835c0 2.8945 2.3555 5.25 5.25 5.25s5.25-2.3555 5.25-5.25-2.3555-5.25-5.25-5.25-5.25 2.3555-5.25 5.25Zm14.5833 16.9167H24.5v-1.1667c0-4.5022-3.6645-8.1667-8.1667-8.1667h-4.6666c-4.5034 0-8.1667 3.6645-8.1667 8.1667v1.1667h19.8333Z" fill="#6AA2B9"/>
+                                          </svg>
+                                        </i>
+                                        <textarea class="bg-grey-4 border-2 border-grey w-full h-[15rem] max-w-[46rem] py-4 pl-24 pr-4 text-light-grey placeholder:font-sourceSansPro placeholder:text-grey focus:outline-none focus:border-blue" rows="5" name="message" id="message" placeholder="Type your message..." required=""></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                        </fieldset>
+                        <div class="w-full flex">
+                            <input class="button bg-blue cursor-pointer ml-auto" type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </section>
             <!--FOOTER-->
