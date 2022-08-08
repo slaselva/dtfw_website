@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>DTFW | Case Study</title>
+        <title>DTFW | Gondola</title>
         <link rel="stylesheet" href="styles.css" />
         <meta name="description" content="">
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_ios_180x180.png">
@@ -14,39 +14,67 @@
         <link rel="icon" href="images/favicon_svg_32x32.svg" type="image/svg+xml">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
     </head>
     <body>
         <main class="relative h-full">
+            <!--MOBILE NAV-->
+            <nav class="mobile-nav absolute z-50" role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <ul id="menu" class="lg:pl-16">
+                        <div class="max-w-[31.25rem] flex flex-col gap-y-2 md:gap-y-5 lg:max-w-[46rem] lg:gap-y-8">
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="who-we-are.html"><li>Who We Are</li></a>
+                            <a href="the-studio.html"><li>The Studio</li></a>
+                            <a class="flex items-center gap-x-4 lg:gap-x-8" href="case-study-gallery.html"><li class="text-blue flex-grow flex-shrink-0 min-w-fit">Case Studies</li><div class="h-1 w-full bg-blue flex-grow flex-shrink"></div></a>
+                        </div>
+                        <!--LOGO-->
+                        <div>
+                            <img class="w-full opacity-[.1]" src="images/dtfw-logo_mobile-nav.svg" alt="">
+                        </div>
+                    </ul>
+                </div>
+            </nav>
             <!--HERO, HEADER and NAV-->
             <section class="relative w-full h-full max-h-screen overflow-hidden grid grid-rows-[8rem_auto] grid-cols-1 xl:grid-rows-[8rem_calc(100vh-7rem)]">
                 <!--HEADER-->
                 <header class="xl:z-30 xl:w-full xl:row-start-1 xl:col-start-1 xl:overflow-clip xl:overflow-y-visible xl:flex xl:justify-between">
-                    <!--MOBILE NAV-->
                     <!--DESKTOP NAVIGATION-->
-                    <div class="hidden xl:block xl:opacity-0 xl:animate-logo-fade-in xl:pt-8 xl:pl-20 4xl:pl-[calc((100vw-100rem)/2)]">
-                        <a href="index.html"><svg class="w-[17.75rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 671.67 181.68">
+                    <div class="hidden xl:block xl:pt-8 xl:pl-20 4xl:pl-[calc((100vw-100rem)/2)]">
+                        <a href="index.html">
+                            <svg class="w-[17.75rem]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 671.67 181.68">
                             <g data-name="Layer 2">
-                              <g data-name="Layer 1">
+                            <g data-name="Layer 1">
                                 <path d="M230.37 86.13V41h15.35c4.54 0 12.12.61 17.93 6.23 5.28 5.07 6.3 11.57 6.3 16.44 0 6-1.49 11.23-5.89 15.63a24.54 24.54 0 0 1-17.32 6.83Zm11.7-9.94h2.37c2.84 0 6.83-.28 9.88-3.25 1.49-1.42 3.45-4.26 3.45-9.27 0-4.2-1.29-7.78-3.52-9.88-2.77-2.57-6.43-2.84-9.34-2.84h-2.84ZM320.54 80.45a27 27 0 0 1-35.59 0 23.59 23.59 0 0 1 0-33.76 27 27 0 0 1 35.59 0 23.62 23.62 0 0 1 0 33.76Zm-26.93-25.51A12.35 12.35 0 0 0 290 63.8a11.45 11.45 0 0 0 3.59 8.39 12.78 12.78 0 0 0 9.13 3.59 12.25 12.25 0 0 0 12.74-12.18 12.2 12.2 0 0 0-3.65-8.66 13.52 13.52 0 0 0-9.07-3.58 13 13 0 0 0-9.13 3.58ZM344.15 41 352 70.16 361.54 41h9.34l8.86 29.16L388.26 41h12.25L386.1 86.13h-12L365.94 60l-8.66 26.11h-11.91L331.9 41ZM408 86.13V41h11.71l21.58 27.61V41H453v45.13h-11.7l-21.58-27.6v27.6ZM481.94 51v35.13h-11.71V51h-9.6V41h30.92v10ZM539.21 80.45a27 27 0 0 1-35.59 0 23.62 23.62 0 0 1 0-33.76 27 27 0 0 1 35.59 0 23.59 23.59 0 0 1 0 33.76Zm-26.93-25.51a12.38 12.38 0 0 0-3.58 8.86 11.45 11.45 0 0 0 3.58 8.39 12.81 12.81 0 0 0 9.14 3.59 12.27 12.27 0 0 0 12.72-12.18 12.17 12.17 0 0 0-3.66-8.66 13.48 13.48 0 0 0-9.06-3.58 13 13 0 0 0-9.14 3.58ZM562.83 41l7.84 29.16L580.21 41h9.34l8.86 29.16L606.94 41h12.24l-14.41 45.13h-12L584.61 60 576 86.13h-12L550.58 41ZM626.68 86.13V41h11.7L660 68.61V41h11.71v45.13H660l-21.58-27.6v27.6ZM256.21 117.11h-14.14v7.51h12.86v9.94h-12.86v17.73h-11.7v-45.13h25.84ZM290.7 144.71h-16.37l-3 7.58H258.9l17.33-45.13H289l17 45.13h-12.52Zm-3.11-8.93-5.07-14.61-4.94 14.61ZM313.59 152.29v-45.13h17.46c3.25 0 7.1.47 9.88 3.52 1.55 1.69 2.77 4.46 2.77 8.46a11.74 11.74 0 0 1-1.28 5.54 7.12 7.12 0 0 1-3.66 3.52 9.94 9.94 0 0 1 9.2 11 12.29 12.29 0 0 1-3.31 8.87c-2.44 2.5-6.7 4.26-12.25 4.26ZM325.3 125h2.16c1.22 0 3.25-.13 4.47-1.42a4.37 4.37 0 0 0 1.08-3 4.65 4.65 0 0 0-1.08-3c-.74-.74-2.17-1.35-4.47-1.35h-2.16Zm0 18.2h2.64c3.25 0 5.95-.33 7.24-1.82a4.41 4.41 0 0 0 .94-2.91 4.58 4.58 0 0 0-1.15-3.25c-1.42-1.42-4.33-1.49-7.24-1.49h-2.43ZM364.44 107.16l7.85 29.16 9.54-29.16h9.34l8.83 29.16 8.52-29.16h12.28l-14.41 45.13h-12l-8.18-26.12-8.66 26.12h-11.89l-13.47-45.13ZM467.55 146.61a27 27 0 0 1-35.59 0 23.6 23.6 0 0 1 0-33.77 27 27 0 0 1 35.59 0 23.63 23.63 0 0 1 0 33.77Zm-26.93-25.51A12.35 12.35 0 0 0 437 130a11.47 11.47 0 0 0 3.59 8.39 12.78 12.78 0 0 0 9.13 3.59 12.25 12.25 0 0 0 12.72-12.18 12.16 12.16 0 0 0-3.65-8.66 13.53 13.53 0 0 0-9.07-3.59 13 13 0 0 0-9.1 3.55ZM503.2 107.16c3.38 0 7.71.54 11 4a14.83 14.83 0 0 1 3.86 10.15 13 13 0 0 1-3.58 9.41 12.69 12.69 0 0 1-6.23 3.11l14.14 18.47h-14.52L496.63 135v17.32h-11.7v-45.16Zm-6.57 20.23h2.24c1.76 0 4.26-.47 5.68-1.83a5.6 5.6 0 0 0 1.49-3.79 5.28 5.28 0 0 0-1.56-3.78c-1.08-1.09-3-1.76-5.61-1.76h-2.24ZM541.59 125.77l14.34-18.61h14.48l-17.93 21.38L572 152.29h-15.12l-15.29-19.55v19.55h-11.71v-45.13h11.71ZM582.5 138.76c2.5 2.36 6.29 4.6 10.35 4.6a6 6 0 0 0 4.54-1.56 4.07 4.07 0 0 0 1.15-2.84 3.54 3.54 0 0 0-1.29-2.71c-1.15-1-2.91-1.49-5.82-2.36l-3-.95c-1.9-.61-4.67-1.63-6.5-3.66-2.3-2.5-2.57-5.68-2.57-8 0-5.55 2.17-8.93 4.13-10.89 2.3-2.3 6.09-4.26 11.57-4.26A31.79 31.79 0 0 1 609 109.8l-4.67 9.13c-3.52-2.77-6.16-3-7.71-3a5.62 5.62 0 0 0-3.86 1.35 3.33 3.33 0 0 0-1.15 2.44 3 3 0 0 0 .61 2c.34.4 1.15 1.21 3.92 2l3.59 1.08c2.84.88 5.82 1.89 8.18 4.46a10.67 10.67 0 0 1 2.91 8.06c0 4.12-1 8.11-4.26 11.36-3.86 3.86-8.52 4.6-13.33 4.6a24.05 24.05 0 0 1-8.86-1.49 31.4 31.4 0 0 1-6.83-3.58ZM173.64 42.58A85.11 85.11 0 0 0 99.88 0H17a2.38 2.38 0 0 0-.26.05 1.8 1.8 0 0 0-.46.1 2 2 0 0 0-.41.2 1.42 1.42 0 0 0-.25.12L.88 11.81s-.06.08-.1.11a2 2 0 0 0-.29.35 1.67 1.67 0 0 0-.24.35 2.43 2.43 0 0 0-.13.38 2.6 2.6 0 0 0-.09.47.79.79 0 0 0 0 .13v41.46a2.38 2.38 0 0 0 .05.26 1.8 1.8 0 0 0 .1.46 2 2 0 0 0 .2.41 1.42 1.42 0 0 0 .12.25l.1.08a2.27 2.27 0 0 0 .54.44c.08 0 .14.11.22.15a2.26 2.26 0 0 0 .93.21h82.88A39.15 39.15 0 0 1 115.74 121a39 39 0 0 1-15.86 3.38H60.69V65.79a2.38 2.38 0 0 0 0-.26 2.63 2.63 0 0 0-.1-.47 2.14 2.14 0 0 0-.2-.4c-.05-.08-.06-.17-.12-.25s-.08-.06-.11-.1a2.62 2.62 0 0 0-.35-.3 2.12 2.12 0 0 0-.35-.23 2.43 2.43 0 0 0-.38-.13 2.6 2.6 0 0 0-.47-.09.5.5 0 0 0-.13 0H17a2.38 2.38 0 0 0-.26 0 1.8 1.8 0 0 0-.46.1 2.57 2.57 0 0 0-.41.19c-.08.05-.17.07-.25.13L.88 75.34s-.06.08-.1.11a2.37 2.37 0 0 0-.29.34 2.05 2.05 0 0 0-.24.36 2.12 2.12 0 0 0-.13.38A2.3 2.3 0 0 0 0 77a.5.5 0 0 0 0 .13v102.29a2.38 2.38 0 0 0 .05.26 1.8 1.8 0 0 0 .1.46 2 2 0 0 0 .2.41 1.42 1.42 0 0 0 .12.25s.07 0 .1.08a2.27 2.27 0 0 0 .54.44c.08.05.14.11.22.15a2.26 2.26 0 0 0 .93.21h82.91a84.44 84.44 0 0 0 59-23.8 85.12 85.12 0 0 0 29.49-115.3ZM155 136.83a81.39 81.39 0 0 1-13.63 17.45l-1.19.74a80.52 80.52 0 0 1-40.32 10.79H19.23V79.39h22.22V138a2 2 0 0 0 .06.26 2.44 2.44 0 0 0 .09.47 1.87 1.87 0 0 0 .2.4 2.06 2.06 0 0 0 .12.26s.08 0 .11.08a2.12 2.12 0 0 0 .54.44 1.64 1.64 0 0 0 .22.14 2.19 2.19 0 0 0 .93.22h41.45a43.63 43.63 0 0 0 33.44-15.62 43.68 43.68 0 0 0-18.73-83.2H19.23V15.87h65.94a80.65 80.65 0 0 1 69.85 121ZM14.71 167l-10.19 7.82V79.39h10.19Zm0-92.09H8.9l5.81-4.48Zm41.46 50.64L46 133.36V78.24l10.19-7.85ZM14.71 42.6 4.52 50.46V15.87h10.19ZM8.9 11.34l5.81-4.48v4.48ZM85.17 52.8H8.9l8.84-6.8h82.14a39.16 39.16 0 0 1 24.5 69.73A43.62 43.62 0 0 0 85.17 52.8Zm14.71 76.08a43.65 43.65 0 0 0 8.46-.83 38.9 38.9 0 0 1-23.17 7.65H50.36l8.84-6.82ZM51.79 68.05l-8.85 6.82H19.23v-6.82ZM8.9 177.16l8.84-6.82h82.14a85.29 85.29 0 0 0 25.59-4 80.45 80.45 0 0 1-40.3 10.79Zm160.83-51.67a81.36 81.36 0 0 1-12.5 16.35c.57-.91 1.16-1.81 1.7-2.74A85.17 85.17 0 0 0 85.17 11.34H19.23V4.52h80.65a80.65 80.65 0 0 1 69.85 121Z" style="fill:#fff"/>
-                              </g>
                             </g>
-                        </svg></a>
+                            </g>
+                            </svg>
+                        </a>
                     </div>
-                    <nav class="hidden xl:bg-dark-blue xl:pr-20 xl:h-20 xl:max-w-[50rem] xl:flex xl:grow xl:shrink-0 4xl:max-w-[60rem] 4xl:pr-[calc((100vw-100rem)/2)]">
+                    <nav class="hidden xl:bg-dark-blue xl:pr-20 xl:h-20 xl:max-w-[48rem] xl:flex xl:grow xl:shrink-0 4xl:max-w-[68rem] 4xl:pr-[calc((100vw-100rem)/2)]">
                         <!--IMAGE-->
-                        <div class="w-full">
+                        <div class="xl:w-[65%] 4xl:w-full">
                             <img class="w-full h-full mix-blend-multiply" src="images/header_nav-image.webp" alt="">
                         </div>
                         <!--LINKS-->
                         <ul class="flex h-full w-full pl-8 grow items-center justify-between">
+                            <li class="relative h-full pt-7 nav-link nav-link-grow-up">
+                                <a class="relative text-white text-sm font-futura font-medium capitalize -tracking-tight hover:text-blue transition-colors ease-out duration-[250ms]" href="index.html">home</a>
+                            </li>
                             <li class="relative h-full pt-7 nav-link nav-link-grow-up">
                                 <a class="relative text-white text-sm font-futura font-medium capitalize -tracking-tight hover:text-blue transition-colors ease-out duration-[250ms]" href="who-we-are.html">who we are</a>
                             </li>
                             <li class="relative h-full pt-7 nav-link nav-link-grow-up">
                                 <a class="relative text-white text-sm font-futura font-medium capitalize -tracking-tight hover:text-blue transition-colors ease-out duration-[250ms]" href="the-studio.html">the studio</a>
                             </li>
-                            <li class="relative h-full pt-7 nav-link nav-link-grow-up">
-                                <a class="relative text-white text-sm font-futura font-medium capitalize -tracking-tight hover:text-blue transition-colors ease-out duration-[250ms]" href="case-study-gallery.html">case studies</a>
+                            <li class="relative h-full pt-7 nav-link nav-link-grow-up nav-link-active">
+                                <a class="relative text-blue text-sm font-futura font-medium capitalize -tracking-tight hover:text-blue transition-colors ease-out duration-[250ms]" href="case-study-gallery.html">case studies</a>
                             </li>
                         </ul>
                     </nav>
@@ -254,23 +282,8 @@
                     </div>
                 </div>
                 <!--IMAGES GRID-->
-                <div class="px-screen flex flex-wrap gap-4 lg:pr-0 lg:flex-nowrap xl:pr-0 4xl:ml-[calc((100vw-100rem)/2)] 4xl:justify-end">
-                    <!--IMAGE 1 CONTAINER-->
-                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
-                        <img class="w-full" src="images/home_working-on_1_1x.webp" alt="">
-                    </div>
-                    <!--IMAGE 2 CONTAINER-->
-                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
-                        <img class="w-full" src="images/home_working-on_2_1x.webp" alt="">
-                    </div>
-                    <!--IMAGE 3 CONTAINER-->
-                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
-                        <img class="w-full" src="images/home_working-on_3_1x.webp" alt="">
-                    </div>
-                    <!--IMAGE 4 CONTAINER-->
-                    <div class="flex-[1_1_15rem] max-w-[25.4375rem] xl:max-w-none">
-                        <img class="w-full" src="images/home_working-on_4_1x.webp" alt="">
-                    </div>
+                <div class="px-screen lg:pr-0 xl:pr-0 4xl:ml-[calc((100vw-100rem)/2)]">
+                    <iframe src="//lightwidget.com/widgets/d8d10a87aae25da5a2795e6a76451980.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
                 </div>
             </section>
             <!--TESTIMONIALS-->
@@ -377,11 +390,17 @@
                                 </div>
                             </div>
                         </div>
-                        <button aria-label="back" onclick="" class="swiper-button-prev">
-                            <img class="" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials_svg.svg" alt="back">
+                        <button aria-label="back" onclick="" class="swiper-button-prev group transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none">
+                                <path class="transition" fill-rule="evenodd" clip-rule="evenodd" d="M12.233 19.5455C11.7937 19.9848 11.0813 19.9848 10.642 19.5455L3.892 12.7955C3.45267 12.3562 3.45267 11.6438 3.892 11.2045L10.642 4.45451C11.0813 4.01517 11.7937 4.01517 12.233 4.45451C12.6723 4.89384 12.6723 5.60616 12.233 6.04549L6.27849 12L12.233 17.9545C12.6723 18.3938 12.6723 19.1062 12.233 19.5455Z" fill="#3B6B7E"/>
+                                <path class="transition" fill-rule="evenodd" clip-rule="evenodd" d="M20.4375 12C20.4375 12.6213 19.9338 13.125 19.3125 13.125L5.625 13.125C5.00368 13.125 4.5 12.6213 4.5 12C4.5 11.3787 5.00368 10.875 5.625 10.875L19.3125 10.875C19.9338 10.875 20.4375 11.3787 20.4375 12Z" fill="#3B6B7E"/>
+                            </svg>
                         </button>
                         <button aria-label="next" onclick="" class="swiper-button-next">
-                            <img class="transform rotate-180" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/testimonials_svg.svg" alt="next">
+                            <svg class="transform rotate-180" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none">
+                                <path class="transition" fill-rule="evenodd" clip-rule="evenodd" d="M12.233 19.5455C11.7937 19.9848 11.0813 19.9848 10.642 19.5455L3.892 12.7955C3.45267 12.3562 3.45267 11.6438 3.892 11.2045L10.642 4.45451C11.0813 4.01517 11.7937 4.01517 12.233 4.45451C12.6723 4.89384 12.6723 5.60616 12.233 6.04549L6.27849 12L12.233 17.9545C12.6723 18.3938 12.6723 19.1062 12.233 19.5455Z" fill="#3B6B7E"/>
+                                <path class="transition" fill-rule="evenodd" clip-rule="evenodd" d="M20.4375 12C20.4375 12.6213 19.9338 13.125 19.3125 13.125L5.625 13.125C5.00368 13.125 4.5 12.6213 4.5 12C4.5 11.3787 5.00368 10.875 5.625 10.875L19.3125 10.875C19.9338 10.875 20.4375 11.3787 20.4375 12Z" fill="#3B6B7E"/>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -463,8 +482,8 @@
                                         <div>
                                             <i class="absolute z-10 w-14 ml-4 mt-6 border-r-2 border-blue">
                                                 <svg class="w-7" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
-                                                    <path d="M8.75 7.5835c0 2.8945 2.3555 5.25 5.25 5.25s5.25-2.3555 5.25-5.25-2.3555-5.25-5.25-5.25-5.25 2.3555-5.25 5.25Zm14.5833 16.9167H24.5v-1.1667c0-4.5022-3.6645-8.1667-8.1667-8.1667h-4.6666c-4.5034 0-8.1667 3.6645-8.1667 8.1667v1.1667h19.8333Z" fill="#6AA2B9"/>
-                                              </svg>
+                                                    <path d="M23.3334 9.3332 14 15.1665 4.6667 9.3332V6.9998L14 12.8332l9.3334-5.8334v2.3334Zm0-4.6667H4.6667a2.3253 2.3253 0 0 0-2.3333 2.3333v14a2.333 2.333 0 0 0 2.3333 2.3334h18.6667a2.3334 2.3334 0 0 0 2.3333-2.3334v-14a2.3333 2.3333 0 0 0-2.3333-2.3333Z" fill="#6AA2B9"/>
+                                                </svg>
                                             </i>
                                             <input class="bg-grey-4 border-2 border-grey w-full h-[4.6875rem] max-w-[37rem] py-4 pl-24 text-light-grey placeholder:font-sourceSansPro placeholder:text-light-grey focus:outline-none focus:border-blue" type="email" name="_replyto" id="email-address" placeholder="" required="">
                                         </div>
@@ -475,18 +494,18 @@
                                     <label class="block font-futura font-bold text-[1.75rem] text-light-grey mb-2" for="message">Your Message</label>
                                     <div class="relative">
                                         <i class="absolute z-10 w-14 ml-4 mt-6 border-r-2 border-blue">
-                                            <svg class="w-7" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
-                                                <path d="M8.75 7.5835c0 2.8945 2.3555 5.25 5.25 5.25s5.25-2.3555 5.25-5.25-2.3555-5.25-5.25-5.25-5.25 2.3555-5.25 5.25Zm14.5833 16.9167H24.5v-1.1667c0-4.5022-3.6645-8.1667-8.1667-8.1667h-4.6666c-4.5034 0-8.1667 3.6645-8.1667 8.1667v1.1667h19.8333Z" fill="#6AA2B9"/>
-                                          </svg>
+                                            <svg class="w-7" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+                                                <path d="M31.9789 3.5972H6.6456c-1.7464 0-3.1667 1.4155-3.1667 3.154v19.0253c0 1.7385 1.4203 3.154 3.1667 3.154h4.75v6.3333l10.0558-6.3333h10.5275c1.7465 0 3.1667-1.4155 3.1667-3.154V6.7512a3.1633 3.1633 0 0 0-3.1667-3.154Z" fill="#6AA2B9"/>
+                                            </svg>
                                         </i>
-                                        <textarea class="bg-grey-4 border-2 border-grey w-full h-[15rem] max-w-[46rem] py-4 pl-24 pr-4 text-light-grey placeholder:font-sourceSansPro placeholder:text-grey focus:outline-none focus:border-blue" rows="5" name="message" id="message" placeholder="Type your message..." required=""></textarea>
+                                        <textarea class="bg-grey-4 border-2 border-grey w-full h-[15rem] max-w-[46rem] pb-4 pt-[1.45rem] pl-24 pr-4 text-light-grey placeholder:font-sourceSansPro placeholder:text-grey focus:outline-none focus:border-blue" rows="5" name="message" id="message" placeholder="Type your message..." required=""></textarea>
                                     </div>
                                 </div>
                             </div>
                             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                         </fieldset>
                         <div class="w-full flex">
-                            <input class="button bg-blue cursor-pointer ml-auto" type="submit" value="Submit">
+                            <input class="button bg-blue cursor-pointer hover:bg-[#3B6B7E] transition hover:transition 4xl:ml-auto" type="submit" value="Submit">
                         </div>
                     </form>
                 </div>
@@ -494,29 +513,29 @@
             <!--FOOTER-->
             <footer class="relative z-40 px-screen py-9 bg-grey-6 overflow-hidden">
                 <!--IMAGE-->
-                <div class="absolute z-20 left-0 top-0 h-full max-w-[70%] mix-blend-multiply">
+                <div class="absolute z-20 left-0 top-0 h-full md:max-w-[70%] mix-blend-multiply">
                     <img class="w-full h-full" src="images/footer_image.webp" alt="">
                 </div>
                 <!--CONTENT-->
-                <div class="relative z-30 mx-auto max-w-layout md:flex md:justify-between md:items-center">
+                <div class="relative z-30 mx-auto max-w-layout flex flex-wrap justify-between items-center">
                     <!--LOCATION AND PHONE-->
-                    <div class="md:flex md:gap-y-4 md:gap-x-20">
+                    <div class="mb-8 flex flex-wrap gap-y-5 gap-x-12 min-w-fit flex-[1_1_31.25rem] lg:mb-0 lg:gap-x-24">
                         <!--LOCATION-->
-                        <div class="flex items-center gap-x-3">
+                        <div class="flex items-center gap-x-3 min-w-fit">
                             <svg class="grow-0 shrink-0 max-w-[2rem]" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                 <path d="M16 2.6665c-5.8813 0-10.6666 4.7853-10.6666 10.66C5.2947 21.9198 15.5947 29.0452 16 29.3332c0 0 10.7054-7.4134 10.6667-16 0-5.8814-4.7853-10.6667-10.6667-10.6667Zm0 16c-2.9466 0-5.3333-2.3867-5.3333-5.3333 0-2.9467 2.3867-5.3334 5.3333-5.3334 2.9467 0 5.3334 2.3867 5.3334 5.3334 0 2.9466-2.3867 5.3333-5.3334 5.3333Z" fill="#6AA2B9"/>
                             </svg>
-                            <p class="grow-0 shrink-0 text-white">128 Winston st, New York, NY 05120</p>
+                            <p class="grow-0 shrink-0 text-white">8360 Lafitte Court, Chalmette LA 70043</p>
                         </div>
                         <!--PHONE-->
-                        <div class="flex items-center gap-x-3">
+                        <div class="flex items-center gap-x-3 min-w-fit">
                             <svg class="grow-0 shrink-0 max-w-[2rem]" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                 <path d="m20.33 21.48 2.24-2.24a2.1903 2.1903 0 0 1 2.34-.48l2.73 1.09a2.1802 2.1802 0 0 1 1.36 2v5a2.1712 2.1712 0 0 1-.1809.8505 2.1718 2.1718 0 0 1-1.2395 1.1688A2.1698 2.1698 0 0 1 26.72 29C7.59 27.81 3.73 11.61 3 5.41A2.17 2.17 0 0 1 5.17 3H10a2.16 2.16 0 0 1 2 1.36l1.09 2.73a2.1595 2.1595 0 0 1-.47 2.34l-2.24 2.24s1.29 8.73 9.95 9.81Z" fill="#6AA2B9"/>
                             </svg>
-                            <p class="grow-0 shrink-0 text-white">Call: 555.555.5555</p>
+                            <p class="grow-0 shrink-0 text-white">Call: 504-553-3043</p>
                         </div>
                     </div>
-                    <h5 class="text-xs text-[#9F9DA3] font-semibold">© copyright 2022  Downtown Fabworks</h5>
+                    <h5 class="mb-8 text-xs text-[#9F9DA3] font-semibold min-w-fit flex-grow-0 flex-shrink lg:mb-0">© copyright 2022  Downtown Fabworks</h5>
                 </div>
             </footer>
         </main>
