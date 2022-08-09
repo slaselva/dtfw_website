@@ -533,6 +533,12 @@ a.button, input.button {
         position: absolute;
         background-color: #6AA2B9;
     }
+.bg-testimonials {
+        background-image: url(images/testimonial-mobile-test.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 .bg-hero-who-we-are {
         background-image: url(images/who-we-are_hero_480w_1x.webp);
         background-size: cover;
@@ -606,6 +612,9 @@ a.button, input.button {
 .right-0 {
   right: 0px;
 }
+.z-50 {
+  z-index: 50;
+}
 .z-30 {
   z-index: 30;
 }
@@ -617,9 +626,6 @@ a.button, input.button {
 }
 .z-40 {
   z-index: 40;
-}
-.z-50 {
-  z-index: 50;
 }
 .z-\[25\] {
   z-index: 25;
@@ -691,14 +697,11 @@ a.button, input.button {
 .mt-\[-7rem\] {
   margin-top: -7rem;
 }
-.ml-auto {
-  margin-left: auto;
-}
 .mb-\[15\%\] {
   margin-bottom: 15%;
 }
-.mb-32 {
-  margin-bottom: 8rem;
+.mt-\[-5rem\] {
+  margin-top: -5rem;
 }
 .mb-16 {
   margin-bottom: 4rem;
@@ -718,6 +721,9 @@ a.button, input.button {
 .h-full {
   height: 100%;
 }
+.h-1 {
+  height: 0.25rem;
+}
 .h-\[4\.6875rem\] {
   height: 4.6875rem;
 }
@@ -727,8 +733,8 @@ a.button, input.button {
 .h-\[25rem\] {
   height: 25rem;
 }
-.h-1 {
-  height: 0.25rem;
+.h-\[32rem\] {
+  height: 32rem;
 }
 .h-\[85vh\] {
   height: 85vh;
@@ -781,13 +787,16 @@ a.button, input.button {
 .w-80 {
   width: 20rem;
 }
-.min-w-\[16rem\] {
-  min-width: 16rem;
-}
 .min-w-fit {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+.min-w-\[16rem\] {
+  min-width: 16rem;
+}
+.max-w-\[31\.25rem\] {
+  max-width: 31.25rem;
 }
 .max-w-layout {
   max-width: 100rem;
@@ -800,9 +809,6 @@ a.button, input.button {
 }
 .max-w-\[46rem\] {
   max-width: 46rem;
-}
-.max-w-\[70\%\] {
-  max-width: 70%;
 }
 .max-w-\[2rem\] {
   max-width: 2rem;
@@ -821,9 +827,6 @@ a.button, input.button {
 }
 .max-w-\[6\.875rem\] {
   max-width: 6.875rem;
-}
-.max-w-\[31\.25rem\] {
-  max-width: 31.25rem;
 }
 .max-w-\[55ch\] {
   max-width: 55ch;
@@ -846,6 +849,9 @@ a.button, input.button {
 .flex-\[1_1_46rem\] {
   flex: 1 1 46rem;
 }
+.flex-\[1_1_31\.25rem\] {
+  flex: 1 1 31.25rem;
+}
 .flex-\[1_1_15rem\] {
   flex: 1 1 15rem;
 }
@@ -867,14 +873,11 @@ a.button, input.button {
 .flex-\[1_1_38ch\] {
   flex: 1 1 38ch;
 }
-.flex-\[1_1_31\.25rem\] {
-  flex: 1 1 31.25rem;
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
 .flex-shrink {
   flex-shrink: 1;
-}
-.flex-shrink-0 {
-  flex-shrink: 0;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -973,6 +976,20 @@ a.button, input.button {
 .gap-12 {
   gap: 3rem;
 }
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
@@ -994,25 +1011,14 @@ a.button, input.button {
 .gap-y-8 {
   row-gap: 2rem;
 }
-.gap-y-2 {
-  row-gap: 0.5rem;
-}
 .gap-y-10 {
   row-gap: 2.5rem;
 }
 .gap-y-6 {
   row-gap: 1.5rem;
 }
-.gap-x-4 {
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-}
-.gap-y-5 {
-  row-gap: 1.25rem;
-}
-.gap-x-12 {
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
+.gap-y-16 {
+  row-gap: 4rem;
 }
 .self-center {
   align-self: center;
@@ -1253,6 +1259,10 @@ a.button, input.button {
 .-tracking-tight {
   letter-spacing: 0.025em;
 }
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(106 162 185 / var(--tw-text-opacity));
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(250 250 250 / var(--tw-text-opacity));
@@ -1264,10 +1274,6 @@ a.button, input.button {
 .text-\[\#9F9DA3\] {
   --tw-text-opacity: 1;
   color: rgb(159 157 163 / var(--tw-text-opacity));
-}
-.text-blue {
-  --tw-text-opacity: 1;
-  color: rgb(106 162 185 / var(--tw-text-opacity));
 }
 .text-dark-blue {
   --tw-text-opacity: 1;
@@ -1289,11 +1295,11 @@ a.button, input.button {
   --tw-text-opacity: 1;
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
-.opacity-40 {
-  opacity: 0.4;
-}
 .opacity-\[\.1\] {
   opacity: .1;
+}
+.opacity-40 {
+  opacity: 0.4;
 }
 .opacity-50 {
   opacity: 0.5;
@@ -1608,7 +1614,50 @@ a.button, input.button {
   transform: translate(-100%, -77px);
 }
 
-@media only screen and (min-width: 768px) { 
+.mainDiv {
+    background-color: #1a1a1a;
+    position: relative;
+    height: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "" !important;
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+} 
+
+.swiper-button-next,
+.swiper-button-prev {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+    margin-top: -8rem !important;
+}
+
+.swiper-button-next img,
+.swiper-button-prev img {
+    width: 100%;
+}
+
+.swiper {    
+    height: 100% !important;
+    overflow: visible !important;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .bg-testimonials {
+        background-image: url(images/testimonial-tablet-s-test.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 
     .timeline-container {
         scroll-padding-inline: 3rem;
@@ -1623,13 +1672,33 @@ a.button, input.button {
         font-size: 4rem;
     }
 
+    .mainDiv {
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    } 
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        height: 3rem;
+        width: 3rem;
+        margin: -7rem 1.875rem 0 1.875rem;
+    }
+
 }
 
 button:hover > svg > path {
     fill: #6AA2B9;
 }
 
-@media only screen and (min-width: 1024px) { 
+@media only screen and (min-width: 1024px) {
+    
+    .bg-testimonials {
+        background-image: url(images/testimonial-tablet-test.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 
     .timeline-container {
         scroll-padding-inline: 4.5rem;
@@ -1644,6 +1713,19 @@ button:hover > svg > path {
         font-size: 6rem;
     }
 
+    .mainDiv {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 90%
+    } 
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        height: 3rem;
+        width: 3rem;
+        margin-top: -6rem;
+    }
+
 }
 
 @media only screen and (min-width: 1025px) { 
@@ -1654,7 +1736,14 @@ button:hover > svg > path {
 
 }
 
-@media only screen and (min-width: 1280px) { 
+@media only screen and (min-width: 1280px) {
+    
+    .bg-testimonials {
+        background-image: url(images/home_testimonials-bg2_1920w_1x.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 
     .timeline-container {
         scroll-padding-inline: 5rem;
@@ -1663,6 +1752,31 @@ button:hover > svg > path {
 
     .bg-hero-who-we-are {
         background-image: url(images/who-we-are_hero_1366w_1x.webp);
+    }
+
+    .mainDiv {
+        position: relative;
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 80%;
+        max-width: 75rem;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {          
+        width: 660px;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 
 }
@@ -1844,8 +1958,8 @@ button:hover > svg > path {
     margin-bottom: 0px;
   }
 
-  .md\:flex {
-    display: flex;
+  .md\:mt-\[\.5rem\] {
+    margin-top: .5rem;
   }
 
   .md\:h-\[21rem\] {
@@ -1890,25 +2004,12 @@ button:hover > svg > path {
     grid-template-rows: 6rem auto;
   }
 
-  .md\:items-center {
-    align-items: center;
-  }
-
   .md\:justify-center {
     justify-content: center;
   }
 
-  .md\:justify-between {
-    justify-content: space-between;
-  }
-
-  .md\:gap-y-4 {
-    row-gap: 1rem;
-  }
-
-  .md\:gap-x-20 {
-    -moz-column-gap: 5rem;
-         column-gap: 5rem;
+  .md\:gap-y-5 {
+    row-gap: 1.25rem;
   }
 
   .md\:gap-x-12 {
@@ -1916,8 +2017,8 @@ button:hover > svg > path {
          column-gap: 3rem;
   }
 
-  .md\:gap-y-5 {
-    row-gap: 1.25rem;
+  .md\:gap-y-8 {
+    row-gap: 2rem;
   }
 
   .md\:self-start {
@@ -1995,24 +2096,24 @@ button:hover > svg > path {
     grid-row-end: 5;
   }
 
-  .lg\:mb-2 {
-    margin-bottom: 0.5rem;
-  }
-
   .lg\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .lg\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
   .lg\:w-\[15rem\] {
     width: 15rem;
   }
 
-  .lg\:max-w-md {
-    max-width: 28rem;
-  }
-
   .lg\:max-w-\[46rem\] {
     max-width: 46rem;
+  }
+
+  .lg\:max-w-md {
+    max-width: 28rem;
   }
 
   .lg\:max-w-\[65ch\] {
@@ -2027,9 +2128,8 @@ button:hover > svg > path {
     flex-wrap: nowrap;
   }
 
-  .lg\:gap-x-28 {
-    -moz-column-gap: 7rem;
-         column-gap: 7rem;
+  .lg\:gap-y-8 {
+    row-gap: 2rem;
   }
 
   .lg\:gap-x-8 {
@@ -2037,13 +2137,14 @@ button:hover > svg > path {
          column-gap: 2rem;
   }
 
-  .lg\:gap-y-8 {
-    row-gap: 2rem;
-  }
-
   .lg\:gap-x-24 {
     -moz-column-gap: 6rem;
          column-gap: 6rem;
+  }
+
+  .lg\:gap-x-28 {
+    -moz-column-gap: 7rem;
+         column-gap: 7rem;
   }
 
   .lg\:self-center {
@@ -2073,6 +2174,10 @@ button:hover > svg > path {
     padding-bottom: 12%;
   }
 
+  .lg\:pl-16 {
+    padding-left: 4rem;
+  }
+
   .lg\:pt-\[12\%\] {
     padding-top: 12%;
   }
@@ -2097,10 +2202,6 @@ button:hover > svg > path {
     padding-top: 12rem;
   }
 
-  .lg\:pl-16 {
-    padding-left: 4rem;
-  }
-
   .lg\:pl-\[25\%\] {
     padding-left: 25%;
   }
@@ -2117,7 +2218,7 @@ button:hover > svg > path {
 @media (min-width: 1280px) {
 
     .xl\:bg-testimonials {
-        background-image: url(images/home_testimonials-bg2_1920w_1x.webp);
+        background-image: url(images/testimonial-mobile-test.jpg);
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -2236,12 +2337,12 @@ button:hover > svg > path {
     margin-top: -5rem;
   }
 
-    .xl\:mb-16 {
-    margin-bottom: 4rem;
-  }
-
     .xl\:mb-32 {
     margin-bottom: 8rem;
+  }
+
+    .xl\:mb-16 {
+    margin-bottom: 4rem;
   }
 
     .xl\:block {
@@ -2316,10 +2417,6 @@ button:hover > svg > path {
 
     .xl\:max-w-\[48rem\] {
     max-width: 48rem;
-  }
-
-    .xl\:max-w-\[50rem\] {
-    max-width: 50rem;
   }
 
     .xl\:max-w-none {
@@ -2686,10 +2783,6 @@ button:hover > svg > path {
 
   .\34xl\:max-w-\[68rem\] {
     max-width: 68rem;
-  }
-
-  .\34xl\:max-w-\[60rem\] {
-    max-width: 60rem;
   }
 
   .\34xl\:max-w-\[75ch\] {
